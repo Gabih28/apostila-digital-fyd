@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Follow Your Dreams Workbook</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="brand">
+      <div class="logo"><img src="img/logofyd.png" alt=""></div>
+      <div>
+        <h1>Follow Your Dreams</h1>
+        <p>Interactive Workbook</p>
+      </div>
+    </div>
+
+    <span class="header-badge">📖 English Course</span>
+  </header>
+
+  <!-- TELA INICIAL / ESCOLHA DO BOOK -->
+  <section id="homeScreen" class="home-screen">
+    <div class="home-content">
+      <h1>Welcome to your Interactive Workbook</h1>
+      <p>Choose your book and start learning English in a fun and interactive way.</p>
+
+      <div class="book-grid">
+        <div class="book-card available" onclick="openBookOne()">
+          <span class="book-icon">📘</span>
+          <h2>Book One</h2>
+          <p>Beginner Level</p>
+          <strong>Available</strong>
+          <button>Start Book One</button>
+        </div>
+
+        <div class="book-card locked">
+          <span class="book-icon">📗</span>
+          <h2>Book Two</h2>
+          <p>Coming Soon</p>
+          <strong>Locked</strong>
+        </div>
+
+        <div class="book-card locked">
+          <span class="book-icon">📙</span>
+          <h2>Book Three</h2>
+          <p>Coming Soon</p>
+          <strong>Locked</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APP DAS LIÇÕES -->
+  <div id="appScreen" class="app hidden">
+
+    <aside class="sidebar">
+      <button class="back-home-btn" onclick="goHome()">← Back to Books</button>
+
+      <h2>Book One</h2>
+      <p id="lessonsCount"></p>
+      <div id="lessonList"></div>
+    </aside>
+
+    <main class="content">
+      <h1 id="moduleTitle">Welcome!</h1>
+
+      <div id="moduleContent"></div>
+
+      <div class="actions">
+        <button id="prevBtn">← Back</button>
+        <button id="completeBtn">Complete Module</button>
+        <button id="testBtn">Final Test</button>
+        <button id="nextBtn">Next →</button>
+      </div>
+    </main>
+
+    <aside class="progressBox">
+      <h3 id="currentLessonName">Lesson 1</h3>
+      <p id="progressText"></p>
+
+      <div class="progressBar">
+        <div id="progressFill"></div>
+      </div>
+
+      <div id="moduleMiniList"></div>
+    </aside>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
