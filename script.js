@@ -1970,18 +1970,3086 @@ const lessons = [
 }
 ];
 
+const bookOneLessons = JSON.parse(JSON.stringify(lessons));
+
+const bookTwoLessons = [
+  {
+    title: "Lesson 1 - Verb To Be Review",
+    modules: [
+      {
+        title: "Verbs and Grammar",
+        content: {
+          topic: "Verb To Be: affirmative, negative and questions",
+          explanation: "In Book Two, you will review and expand important structures. In this lesson, you will practice the verb to be with people, places and feelings.",
+          examples: [
+            "I am happy → Eu estou feliz",
+            "You are my friend → Você é meu amigo",
+            "He is at school → Ele está na escola",
+            "She is a teacher → Ela é professora",
+            "We are ready → Nós estamos prontos",
+            "They are not tired → Eles não estão cansados",
+            "Are you okay? → Você está bem?",
+            "Is he at home? → Ele está em casa?"
+          ],
+          exercises: [
+            { type: "choice", question: "Choose the correct translation: She is a teacher.", options: ["Ela é professora", "Ela está cansada", "Ela tem uma professora"], answer: "Ela é professora" },
+            { type: "text", question: "Translate to English: Eu estou feliz.", answer: "i am happy" },
+            { type: "text", question: "Translate to English: Você está bem?", answer: "are you okay" },
+            { type: "matching", question: "Match the sentences:", pairs: [
+              { left: "He is at school", right: "Ele está na escola" },
+              { left: "They are not tired", right: "Eles não estão cansados" },
+              { left: "We are ready", right: "Nós estamos prontos" }
+            ] }
+          ]
+        }
+      },
+      {
+        title: "Vocabulary",
+        content: {
+          topic: "Feelings and places",
+          explanation: "Practice common adjectives and places to describe how people feel and where they are.",
+          examples: [
+            "happy → feliz", "sad → triste", "tired → cansado", "ready → pronto", "busy → ocupado", "hungry → com fome", "school → escola", "home → casa", "classroom → sala de aula", "library → biblioteca"
+          ],
+          exercises: [
+            { type: "choice", question: "What does 'tired' mean?", options: ["feliz", "cansado", "ocupado"], answer: "cansado" },
+            { type: "text", question: "Translate to English: biblioteca", answer: "library" },
+            { type: "matching", question: "Match the words:", pairs: [
+              { left: "happy", right: "feliz" },
+              { left: "hungry", right: "com fome" },
+              { left: "classroom", right: "sala de aula" },
+              { left: "home", right: "casa" }
+            ] }
+          ]
+        }
+      },
+      {
+        title: "Conversation",
+        content: {
+          topic: "At school",
+          explanation: "Read the mini conversation and practice asking simple questions with the verb to be.",
+          examples: [
+            "A: Hi! Are you ready for class? → Oi! Você está pronto para a aula?",
+            "B: Yes, I am. I am happy today. → Sim, estou. Estou feliz hoje.",
+            "A: Is your teacher in the classroom? → Sua professora está na sala?",
+            "B: Yes, she is. She is busy now. → Sim, está. Ela está ocupada agora."
+          ],
+          exercises: [
+            { type: "choice", question: "Where is the teacher?", options: ["In the classroom", "At the bank", "At the market"], answer: "In the classroom" },
+            { type: "text", question: "Answer in English: Are you ready?", answer: "yes i am" },
+            { type: "matching", question: "Match the questions:", pairs: [
+              { left: "Are you ready?", right: "Você está pronto?" },
+              { left: "Is she busy?", right: "Ela está ocupada?" },
+              { left: "Are they happy?", right: "Eles estão felizes?" }
+            ] }
+          ]
+        }
+      }
+    ],
+    test: [
+      { type: "text", question: "Translate: Eu estou pronto.", answer: "i am ready" },
+      { type: "choice", question: "They are not tired means:", options: ["Eles não estão cansados", "Eles estão felizes", "Eles não têm aula"], answer: "Eles não estão cansados" },
+      { type: "text", question: "Translate: Ela está na sala de aula.", answer: "she is in the classroom" },
+      { type: "matching", question: "Match:", pairs: [
+        { left: "library", right: "biblioteca" },
+        { left: "busy", right: "ocupado" },
+        { left: "Are you okay?", right: "Você está bem?" }
+      ] }
+    ]
+  },
+  {
+    title: "Lesson 2 - Simple Present",
+    modules: [
+      {
+        title: "Verbs and Grammar",
+        content: {
+          topic: "Simple Present: routines and habits",
+          explanation: "Use the Simple Present to talk about routines, habits and things that happen regularly. Remember: he, she and it usually take -s.",
+          examples: [
+            "I study English every day → Eu estudo inglês todos os dias",
+            "You play soccer on Fridays → Você joga futebol às sextas",
+            "He studies at night → Ele estuda à noite",
+            "She works in the morning → Ela trabalha de manhã",
+            "We don't study on Sundays → Nós não estudamos aos domingos",
+            "Does she speak English? → Ela fala inglês?",
+            "Do you like music? → Você gosta de música?"
+          ],
+          exercises: [
+            { type: "choice", question: "Choose the correct sentence:", options: ["She study English", "She studies English", "She studying English"], answer: "She studies English" },
+            { type: "text", question: "Translate to English: Ele trabalha de manhã.", answer: "he works in the morning" },
+            { type: "text", question: "Translate to English: Você gosta de música?", answer: "do you like music" },
+            { type: "matching", question: "Match:", pairs: [
+              { left: "I study", right: "Eu estudo" },
+              { left: "She works", right: "Ela trabalha" },
+              { left: "We don't play", right: "Nós não jogamos" }
+            ] }
+          ]
+        }
+      },
+      {
+        title: "Vocabulary",
+        content: {
+          topic: "Daily routine",
+          explanation: "Practice words and expressions about daily routine.",
+          examples: [
+            "wake up → acordar", "get up → levantar", "take a shower → tomar banho", "have breakfast → tomar café da manhã", "go to school → ir para a escola", "do homework → fazer lição de casa", "watch TV → assistir TV", "go to bed → ir para a cama"
+          ],
+          exercises: [
+            { type: "choice", question: "What does 'do homework' mean?", options: ["fazer lição de casa", "tomar banho", "ir para a cama"], answer: "fazer lição de casa" },
+            { type: "text", question: "Translate to English: acordar", answer: "wake up" },
+            { type: "matching", question: "Match the routine:", pairs: [
+              { left: "take a shower", right: "tomar banho" },
+              { left: "have breakfast", right: "tomar café da manhã" },
+              { left: "go to school", right: "ir para a escola" }
+            ] }
+          ]
+        }
+      },
+      {
+        title: "Writing Practice",
+        content: {
+          topic: "My routine",
+          explanation: "Practice writing about your routine using the Simple Present.",
+          examples: [
+            "I wake up at seven o'clock → Eu acordo às sete horas",
+            "I go to school in the morning → Eu vou para a escola de manhã",
+            "I study English twice a week → Eu estudo inglês duas vezes por semana",
+            "She watches TV at night → Ela assiste TV à noite"
+          ],
+          exercises: [
+            { type: "text", question: "Translate to English: Eu estudo inglês duas vezes por semana.", answer: "i study english twice a week" },
+            { type: "choice", question: "What is the best sentence?", options: ["He go to school", "He goes to school", "He going to school"], answer: "He goes to school" },
+            { type: "matching", question: "Match:", pairs: [
+              { left: "at night", right: "à noite" },
+              { left: "in the morning", right: "de manhã" },
+              { left: "twice a week", right: "duas vezes por semana" }
+            ] }
+          ]
+        }
+      }
+    ],
+    test: [
+      { type: "choice", question: "Choose the correct sentence:", options: ["She likes English", "She like English", "She liking English"], answer: "She likes English" },
+      { type: "text", question: "Translate: Eu acordo às sete horas.", answer: "i wake up at seven o'clock" },
+      { type: "text", question: "Translate: Ele vai para a escola.", answer: "he goes to school" },
+      { type: "matching", question: "Match:", pairs: [
+        { left: "watch TV", right: "assistir TV" },
+        { left: "go to bed", right: "ir para a cama" },
+        { left: "do homework", right: "fazer lição de casa" }
+      ] }
+    ]
+  },
+  {
+    title: "Lesson 3 - Present Continuous",
+    modules: [
+      {
+        title: "Verbs and Grammar",
+        content: {
+          topic: "Actions happening now",
+          explanation: "Use the Present Continuous to talk about actions happening now: am/is/are + verb-ing.",
+          examples: [
+            "I am studying now → Eu estou estudando agora",
+            "You are reading a book → Você está lendo um livro",
+            "He is playing soccer → Ele está jogando futebol",
+            "She is cooking dinner → Ela está cozinhando o jantar",
+            "We are learning English → Nós estamos aprendendo inglês",
+            "They are not sleeping → Eles não estão dormindo",
+            "Are you listening? → Você está ouvindo?"
+          ],
+          exercises: [
+            { type: "choice", question: "Choose the Present Continuous sentence:", options: ["She cooks dinner", "She is cooking dinner", "She cooked dinner"], answer: "She is cooking dinner" },
+            { type: "text", question: "Translate to English: Eu estou estudando agora.", answer: "i am studying now" },
+            { type: "text", question: "Translate to English: Você está ouvindo?", answer: "are you listening" },
+            { type: "matching", question: "Match:", pairs: [
+              { left: "He is playing", right: "Ele está jogando" },
+              { left: "We are learning", right: "Nós estamos aprendendo" },
+              { left: "They are sleeping", right: "Eles estão dormindo" }
+            ] }
+          ]
+        }
+      },
+      {
+        title: "Vocabulary",
+        content: {
+          topic: "Actions now",
+          explanation: "Practice action verbs used with the Present Continuous.",
+          examples: ["studying → estudando", "reading → lendo", "writing → escrevendo", "listening → ouvindo", "speaking → falando", "cooking → cozinhando", "playing → jogando", "running → correndo"],
+          exercises: [
+            { type: "choice", question: "What does 'reading' mean?", options: ["lendo", "ouvindo", "correndo"], answer: "lendo" },
+            { type: "text", question: "Translate to English: falando", answer: "speaking" },
+            { type: "matching", question: "Match:", pairs: [
+              { left: "writing", right: "escrevendo" },
+              { left: "listening", right: "ouvindo" },
+              { left: "running", right: "correndo" }
+            ] }
+          ]
+        }
+      },
+      {
+        title: "Conversation",
+        content: {
+          topic: "What are you doing?",
+          explanation: "Practice short conversations about actions happening now.",
+          examples: [
+            "A: What are you doing? → O que você está fazendo?",
+            "B: I am studying English. → Eu estou estudando inglês.",
+            "A: Is your brother playing? → Seu irmão está brincando?",
+            "B: No, he is reading. → Não, ele está lendo."
+          ],
+          exercises: [
+            { type: "choice", question: "What is the person doing?", options: ["Studying English", "Sleeping", "Going to school"], answer: "Studying English" },
+            { type: "text", question: "Translate: O que você está fazendo?", answer: "what are you doing" },
+            { type: "matching", question: "Match:", pairs: [
+              { left: "What are you doing?", right: "O que você está fazendo?" },
+              { left: "He is reading", right: "Ele está lendo" },
+              { left: "No, he isn't", right: "Não, ele não está" }
+            ] }
+          ]
+        }
+      }
+    ],
+    test: [
+      { type: "text", question: "Translate: Nós estamos aprendendo inglês.", answer: "we are learning english" },
+      { type: "choice", question: "Choose the correct sentence:", options: ["They sleeping", "They are sleeping", "They is sleeping"], answer: "They are sleeping" },
+      { type: "text", question: "Translate: O que você está fazendo?", answer: "what are you doing" },
+      { type: "matching", question: "Match:", pairs: [
+        { left: "cooking", right: "cozinhando" },
+        { left: "running", right: "correndo" },
+        { left: "listening", right: "ouvindo" }
+      ] }
+    ]
+  },
+  {
+    title: "Lesson 4 - There Is / There Are",
+    modules: [
+      {
+        title: "Verbs and Grammar",
+        content: {
+          topic: "Describing places",
+          explanation: "Use there is for one thing and there are for two or more things.",
+          examples: [
+            "There is a book on the table → Há um livro na mesa",
+            "There is a teacher in the classroom → Há uma professora na sala",
+            "There are two students here → Há dois alunos aqui",
+            "There are many books in the library → Há muitos livros na biblioteca",
+            "There isn't a pen in my bag → Não há uma caneta na minha bolsa",
+            "Are there students in the classroom? → Há alunos na sala?"
+          ],
+          exercises: [
+            { type: "choice", question: "Choose the correct sentence:", options: ["There is two books", "There are two books", "There are a book"], answer: "There are two books" },
+            { type: "text", question: "Translate: Há um livro na mesa.", answer: "there is a book on the table" },
+            { type: "text", question: "Translate: Há alunos na sala?", answer: "are there students in the classroom" },
+            { type: "matching", question: "Match:", pairs: [
+              { left: "There is", right: "Há / existe" },
+              { left: "There are", right: "Há / existem" },
+              { left: "There isn't", right: "Não há" }
+            ] }
+          ]
+        }
+      },
+      {
+        title: "Vocabulary",
+        content: {
+          topic: "Rooms and objects",
+          explanation: "Practice vocabulary to describe houses and classrooms.",
+          examples: ["bedroom → quarto", "kitchen → cozinha", "bathroom → banheiro", "living room → sala", "table → mesa", "chair → cadeira", "bag → bolsa/mochila", "window → janela"],
+          exercises: [
+            { type: "choice", question: "What does 'kitchen' mean?", options: ["cozinha", "quarto", "banheiro"], answer: "cozinha" },
+            { type: "text", question: "Translate: janela", answer: "window" },
+            { type: "matching", question: "Match:", pairs: [
+              { left: "bedroom", right: "quarto" },
+              { left: "chair", right: "cadeira" },
+              { left: "bathroom", right: "banheiro" }
+            ] }
+          ]
+        }
+      },
+      {
+        title: "Writing Practice",
+        content: {
+          topic: "Describe a room",
+          explanation: "Use there is and there are to describe a room or classroom.",
+          examples: [
+            "There is a table in my kitchen → Há uma mesa na minha cozinha",
+            "There are three chairs in the classroom → Há três cadeiras na sala",
+            "There is a window in my bedroom → Há uma janela no meu quarto",
+            "There are many books on the table → Há muitos livros na mesa"
+          ],
+          exercises: [
+            { type: "text", question: "Translate: Há três cadeiras na sala.", answer: "there are three chairs in the classroom" },
+            { type: "choice", question: "Use for one object:", options: ["There is", "There are", "Are there"], answer: "There is" },
+            { type: "matching", question: "Match:", pairs: [
+              { left: "on the table", right: "na mesa" },
+              { left: "in my bedroom", right: "no meu quarto" },
+              { left: "in the kitchen", right: "na cozinha" }
+            ] }
+          ]
+        }
+      }
+    ],
+    test: [
+      { type: "choice", question: "Choose the correct sentence:", options: ["There is a chair", "There are a chair", "There have a chair"], answer: "There is a chair" },
+      { type: "text", question: "Translate: Há muitos livros na biblioteca.", answer: "there are many books in the library" },
+      { type: "text", question: "Translate: cozinha", answer: "kitchen" },
+      { type: "matching", question: "Match:", pairs: [
+        { left: "bathroom", right: "banheiro" },
+        { left: "living room", right: "sala" },
+        { left: "There isn't", right: "Não há" }
+      ] }
+    ]
+  },
+  {
+    title: "Lesson 5 - Can / Can't",
+    modules: [
+      {
+        title: "Verbs and Grammar",
+        content: {
+          topic: "Abilities and permission",
+          explanation: "Use can to talk about abilities and permission. Use can't for negative sentences.",
+          examples: [
+            "I can speak English → Eu consigo falar inglês",
+            "She can play the piano → Ela sabe tocar piano",
+            "He can't swim → Ele não sabe nadar",
+            "Can you help me? → Você pode me ajudar?",
+            "Can they come to class? → Eles podem vir para a aula?",
+            "We can learn together → Nós podemos aprender juntos"
+          ],
+          exercises: [
+            { type: "choice", question: "What does 'I can speak English' mean?", options: ["Eu consigo falar inglês", "Eu quero falar inglês", "Eu gosto de inglês"], answer: "Eu consigo falar inglês" },
+            { type: "text", question: "Translate: Você pode me ajudar?", answer: "can you help me" },
+            { type: "text", question: "Translate: Ele não sabe nadar.", answer: "he can't swim" },
+            { type: "matching", question: "Match:", pairs: [
+              { left: "can", right: "pode/consegue" },
+              { left: "can't", right: "não pode/não consegue" },
+              { left: "swim", right: "nadar" }
+            ] }
+          ]
+        }
+      },
+      {
+        title: "Vocabulary",
+        content: {
+          topic: "Abilities",
+          explanation: "Practice verbs used to talk about abilities.",
+          examples: ["swim → nadar", "dance → dançar", "sing → cantar", "draw → desenhar", "drive → dirigir", "cook → cozinhar", "play the guitar → tocar violão", "speak English → falar inglês"],
+          exercises: [
+            { type: "choice", question: "What does 'draw' mean?", options: ["desenhar", "dirigir", "cantar"], answer: "desenhar" },
+            { type: "text", question: "Translate: tocar violão", answer: "play the guitar" },
+            { type: "matching", question: "Match:", pairs: [
+              { left: "sing", right: "cantar" },
+              { left: "drive", right: "dirigir" },
+              { left: "dance", right: "dançar" }
+            ] }
+          ]
+        }
+      },
+      {
+        title: "Speaking Practice",
+        content: {
+          topic: "What can you do?",
+          explanation: "Practice asking and answering questions about abilities.",
+          examples: [
+            "A: Can you cook? → Você sabe cozinhar?",
+            "B: Yes, I can. → Sim, eu sei.",
+            "A: Can she play the guitar? → Ela sabe tocar violão?",
+            "B: No, she can't. → Não, ela não sabe."
+          ],
+          exercises: [
+            { type: "choice", question: "How do you answer a positive can question?", options: ["Yes, I can", "Yes, I do", "Yes, I am"], answer: "Yes, I can" },
+            { type: "text", question: "Translate: Não, ela não sabe.", answer: "no she can't" },
+            { type: "matching", question: "Match:", pairs: [
+              { left: "Can you cook?", right: "Você sabe cozinhar?" },
+              { left: "Yes, I can", right: "Sim, eu sei" },
+              { left: "No, she can't", right: "Não, ela não sabe" }
+            ] }
+          ]
+        }
+      }
+    ],
+    test: [
+      { type: "text", question: "Translate: Eu consigo falar inglês.", answer: "i can speak english" },
+      { type: "choice", question: "He can't swim means:", options: ["Ele não sabe nadar", "Ele sabe nadar", "Ele quer nadar"], answer: "Ele não sabe nadar" },
+      { type: "text", question: "Translate: tocar violão", answer: "play the guitar" },
+      { type: "matching", question: "Match:", pairs: [
+        { left: "draw", right: "desenhar" },
+        { left: "cook", right: "cozinhar" },
+        { left: "Can you help me?", right: "Você pode me ajudar?" }
+      ] }
+    ]
+  },
+  {
+    title: "Lesson 6 - Past Simple Introduction",
+    modules: [
+      {
+        title: "Verbs and Grammar",
+        content: {
+          topic: "Regular past verbs",
+          explanation: "Use the Past Simple to talk about finished actions. Many regular verbs end in -ed.",
+          examples: [
+            "I worked yesterday → Eu trabalhei ontem",
+            "She studied last night → Ela estudou ontem à noite",
+            "We watched a movie → Nós assistimos a um filme",
+            "They played soccer → Eles jogaram futebol",
+            "I didn't work yesterday → Eu não trabalhei ontem",
+            "Did you study yesterday? → Você estudou ontem?"
+          ],
+          exercises: [
+            { type: "choice", question: "Choose the regular past verb:", options: ["played", "go", "does"], answer: "played" },
+            { type: "text", question: "Translate: Eu trabalhei ontem.", answer: "i worked yesterday" },
+            { type: "text", question: "Translate: Você estudou ontem?", answer: "did you study yesterday" },
+            { type: "matching", question: "Match:", pairs: [
+              { left: "worked", right: "trabalhou" },
+              { left: "studied", right: "estudou" },
+              { left: "watched", right: "assistiu" }
+            ] }
+          ]
+        }
+      },
+      {
+        title: "Vocabulary",
+        content: {
+          topic: "Past time expressions",
+          explanation: "Practice words used to talk about the past.",
+          examples: ["yesterday → ontem", "last night → ontem à noite", "last week → semana passada", "last month → mês passado", "two days ago → dois dias atrás", "in 2025 → em 2025"],
+          exercises: [
+            { type: "choice", question: "What does 'last week' mean?", options: ["semana passada", "ontem", "mês passado"], answer: "semana passada" },
+            { type: "text", question: "Translate: dois dias atrás", answer: "two days ago" },
+            { type: "matching", question: "Match:", pairs: [
+              { left: "yesterday", right: "ontem" },
+              { left: "last month", right: "mês passado" },
+              { left: "last night", right: "ontem à noite" }
+            ] }
+          ]
+        }
+      },
+      {
+        title: "Conversation",
+        content: {
+          topic: "What did you do?",
+          explanation: "Practice short questions and answers about yesterday.",
+          examples: [
+            "A: What did you do yesterday? → O que você fez ontem?",
+            "B: I studied English. → Eu estudei inglês.",
+            "A: Did you watch a movie? → Você assistiu a um filme?",
+            "B: Yes, I did. → Sim."
+          ],
+          exercises: [
+            { type: "choice", question: "What did the person study?", options: ["English", "Spanish", "Math"], answer: "English" },
+            { type: "text", question: "Translate: O que você fez ontem?", answer: "what did you do yesterday" },
+            { type: "matching", question: "Match:", pairs: [
+              { left: "Did you watch?", right: "Você assistiu?" },
+              { left: "Yes, I did", right: "Sim" },
+              { left: "I studied English", right: "Eu estudei inglês" }
+            ] }
+          ]
+        }
+      }
+
+    ],
+    test: [
+      { type: "text", question: "Translate: Ela estudou ontem à noite.", answer: "she studied last night" },
+      { type: "choice", question: "Did you study yesterday? means:", options: ["Você estudou ontem?", "Você estuda ontem?", "Você vai estudar?"], answer: "Você estudou ontem?" },
+      { type: "text", question: "Translate: semana passada", answer: "last week" },
+      { type: "matching", question: "Match:", pairs: [
+        { left: "watched", right: "assistiu" },
+        { left: "yesterday", right: "ontem" },
+        { left: "two days ago", right: "dois dias atrás" }
+      ] }
+    ]
+  },
+  {
+    title: "Lesson 7 - Future with Going To",
+    modules: [
+      {
+        title: "Verbs and Grammar",
+        content: {
+          topic: "Plans and intentions",
+          explanation: "Use going to to talk about plans and intentions for the future.",
+          examples: [
+            "I am going to study tomorrow → Eu vou estudar amanhã",
+            "She is going to travel next month → Ela vai viajar mês que vem",
+            "We are going to watch a movie → Nós vamos assistir a um filme",
+            "They are not going to play today → Eles não vão jogar hoje",
+            "Are you going to help me? → Você vai me ajudar?"
+          ],
+          exercises: [
+            { type: "choice", question: "Choose the future sentence:", options: ["I am going to study", "I studied", "I study every day"], answer: "I am going to study" },
+            { type: "text", question: "Translate: Ela vai viajar mês que vem.", answer: "she is going to travel next month" },
+            { type: "text", question: "Translate: Você vai me ajudar?", answer: "are you going to help me" },
+            { type: "matching", question: "Match:", pairs: [
+              { left: "tomorrow", right: "amanhã" },
+              { left: "next month", right: "mês que vem" },
+              { left: "going to", right: "vai / vão" }
+            ] }
+          ]
+        }
+      },
+      {
+        title: "Vocabulary",
+        content: {
+          topic: "Future plans",
+          explanation: "Practice useful verbs for future plans.",
+          examples: ["travel → viajar", "visit → visitar", "study → estudar", "help → ajudar", "watch → assistir", "buy → comprar", "call → ligar", "practice → praticar"],
+          exercises: [
+            { type: "choice", question: "What does 'travel' mean?", options: ["viajar", "comprar", "ligar"], answer: "viajar" },
+            { type: "text", question: "Translate: praticar", answer: "practice" },
+            { type: "matching", question: "Match:", pairs: [
+              { left: "call", right: "ligar" },
+              { left: "buy", right: "comprar" },
+              { left: "visit", right: "visitar" }
+            ] }
+          ]
+        }
+      },
+      {
+        title: "Writing Practice",
+        content: {
+          topic: "My plans",
+          explanation: "Write and practice sentences about your plans.",
+          examples: [
+            "I am going to practice English this week → Eu vou praticar inglês esta semana",
+            "I am going to visit my friend tomorrow → Eu vou visitar meu amigo amanhã",
+            "We are going to buy food today → Nós vamos comprar comida hoje"
+          ],
+          exercises: [
+            { type: "text", question: "Translate: Eu vou praticar inglês esta semana.", answer: "i am going to practice english this week" },
+            { type: "choice", question: "Which sentence is correct?", options: ["She is going to travel", "She going travel", "She are going to travel"], answer: "She is going to travel" },
+            { type: "matching", question: "Match:", pairs: [
+              { left: "this week", right: "esta semana" },
+              { left: "tomorrow", right: "amanhã" },
+              { left: "today", right: "hoje" }
+            ] }
+          ]
+        }
+      }
+    ],
+    test: [
+      { type: "text", question: "Translate: Eu vou estudar amanhã.", answer: "i am going to study tomorrow" },
+      { type: "choice", question: "She is going to travel means:", options: ["Ela vai viajar", "Ela viajou", "Ela viaja"], answer: "Ela vai viajar" },
+      { type: "text", question: "Translate: mês que vem", answer: "next month" },
+      { type: "matching", question: "Match:", pairs: [
+        { left: "practice", right: "praticar" },
+        { left: "call", right: "ligar" },
+        { left: "Are you going to help me?", right: "Você vai me ajudar?" }
+      ] }
+    ]
+  },
+  {
+    title: "Lesson 8 - Review and Project",
+    modules: [
+      {
+        title: "Grammar Review",
+        content: {
+          topic: "Book Two review",
+          explanation: "Review the main structures from Book Two: verb to be, simple present, present continuous, there is/are, can/can't, past simple and going to.",
+          examples: [
+            "I am happy → Eu estou feliz",
+            "She studies English → Ela estuda inglês",
+            "They are playing now → Eles estão jogando agora",
+            "There are books on the table → Há livros na mesa",
+            "I can speak English → Eu consigo falar inglês",
+            "I studied yesterday → Eu estudei ontem",
+            "I am going to travel → Eu vou viajar"
+          ],
+          exercises: [
+            { type: "choice", question: "Which sentence is Present Continuous?", options: ["I am studying now", "I studied yesterday", "I study every day"], answer: "I am studying now" },
+            { type: "text", question: "Translate: Eu consigo falar inglês.", answer: "i can speak english" },
+            { type: "text", question: "Translate: Ela estuda inglês.", answer: "she studies english" },
+            { type: "matching", question: "Match the grammar:", pairs: [
+              { left: "There are", right: "Há / existem" },
+              { left: "I studied", right: "Eu estudei" },
+              { left: "going to", right: "vai / vão" }
+            ] }
+          ]
+        }
+      },
+      {
+        title: "Vocabulary Review",
+        content: {
+          topic: "Important words from Book Two",
+          explanation: "Review useful vocabulary from the whole book.",
+          examples: ["routine → rotina", "library → biblioteca", "kitchen → cozinha", "swim → nadar", "yesterday → ontem", "tomorrow → amanhã", "travel → viajar", "practice → praticar"],
+          exercises: [
+            { type: "choice", question: "What does 'routine' mean?", options: ["rotina", "viagem", "cozinha"], answer: "rotina" },
+            { type: "text", question: "Translate: viajar", answer: "travel" },
+            { type: "matching", question: "Match:", pairs: [
+              { left: "library", right: "biblioteca" },
+              { left: "swim", right: "nadar" },
+              { left: "tomorrow", right: "amanhã" }
+            ] }
+          ]
+        }
+      },
+      {
+        title: "Final Project",
+        content: {
+          topic: "My English profile",
+          explanation: "Create a short presentation about yourself using the structures from Book Two.",
+          examples: [
+            "My name is... → Meu nome é...",
+            "I study English twice a week → Eu estudo inglês duas vezes por semana",
+            "I can... → Eu consigo...",
+            "Yesterday, I... → Ontem, eu...",
+            "Next week, I am going to... → Semana que vem, eu vou..."
+          ],
+          exercises: [
+            { type: "text", question: "Translate: Meu nome é Ana.", answer: "my name is ana" },
+            { type: "text", question: "Translate: Semana que vem, eu vou estudar.", answer: "next week i am going to study" },
+            { type: "matching", question: "Match:", pairs: [
+              { left: "My name is", right: "Meu nome é" },
+              { left: "Yesterday", right: "Ontem" },
+              { left: "Next week", right: "Semana que vem" }
+            ] }
+          ]
+        }
+      }
+    ],
+    test: [
+      { type: "choice", question: "Choose the correct sentence:", options: ["She studies English", "She study English", "She studying English"], answer: "She studies English" },
+      { type: "text", question: "Translate: Eles estão jogando agora.", answer: "they are playing now" },
+      { type: "text", question: "Translate: Eu vou viajar.", answer: "i am going to travel" },
+      { type: "choice", question: "There are books on the table means:", options: ["Há livros na mesa", "Há um livro na mesa", "Os livros estão em casa"], answer: "Há livros na mesa" },
+      { type: "matching", question: "Match:", pairs: [
+        { left: "yesterday", right: "ontem" },
+        { left: "practice", right: "praticar" },
+        { left: "I can speak English", right: "Eu consigo falar inglês" }
+      ] }
+    ]
+  }
+  ,
+{
+  title: "Lesson 9 - Comparatives",
+  modules: [
+    {
+      title: "Verbs and Grammar",
+      content: {
+        topic: "Comparatives: bigger, smaller, better",
+        explanation: "Use comparatives to compare two people, places or things. For short adjectives, we usually add -er. For longer adjectives, we use more.",
+        examples: [
+          "My house is bigger than your house → Minha casa é maior que a sua casa",
+          "This book is smaller than that book → Este livro é menor que aquele livro",
+          "English is easier than math → Inglês é mais fácil que matemática",
+          "This movie is more interesting than that movie → Este filme é mais interessante que aquele filme",
+          "She is taller than me → Ela é mais alta que eu",
+          "He is younger than his brother → Ele é mais novo que o irmão dele"
+        ],
+        exercises: [
+          {
+            type: "choice",
+            question: "Choose the correct sentence:",
+            options: ["She is tall than me", "She is taller than me", "She more tall than me"],
+            answer: "She is taller than me"
+          },
+          {
+            type: "text",
+            question: "Translate to English: Minha casa é maior que a sua casa.",
+            answer: "my house is bigger than your house"
+          },
+          {
+            type: "text",
+            question: "Translate to English: Este filme é mais interessante.",
+            answer: "this movie is more interesting"
+          },
+          {
+            type: "matching",
+            question: "Match the comparatives:",
+            pairs: [
+              { left: "bigger", right: "maior" },
+              { left: "smaller", right: "menor" },
+              { left: "easier", right: "mais fácil" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      title: "Vocabulary",
+      content: {
+        topic: "Adjectives",
+        explanation: "Practice adjectives used to describe and compare people, places and things.",
+        examples: [
+          "big → grande",
+          "small → pequeno",
+          "tall → alto",
+          "short → baixo / curto",
+          "old → velho / antigo",
+          "young → jovem / novo",
+          "easy → fácil",
+          "difficult → difícil",
+          "interesting → interessante",
+          "beautiful → bonito"
+        ],
+        exercises: [
+          {
+            type: "choice",
+            question: "What does 'difficult' mean?",
+            options: ["fácil", "difícil", "bonito"],
+            answer: "difícil"
+          },
+          {
+            type: "text",
+            question: "Translate to English: bonito",
+            answer: "beautiful"
+          },
+          {
+            type: "matching",
+            question: "Match the adjectives:",
+            pairs: [
+              { left: "young", right: "jovem" },
+              { left: "old", right: "velho" },
+              { left: "easy", right: "fácil" },
+              { left: "big", right: "grande" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      title: "Writing Practice",
+      content: {
+        topic: "Comparing things",
+        explanation: "Practice writing sentences comparing two things.",
+        examples: [
+          "My school is bigger than my house → Minha escola é maior que minha casa",
+          "This activity is easier than the test → Esta atividade é mais fácil que a prova",
+          "My city is more beautiful than before → Minha cidade é mais bonita que antes"
+        ],
+        exercises: [
+          {
+            type: "text",
+            question: "Translate to English: Esta atividade é mais fácil que a prova.",
+            answer: "this activity is easier than the test"
+          },
+          {
+            type: "choice",
+            question: "Choose the correct comparative:",
+            options: ["more easy", "easier", "easyer"],
+            answer: "easier"
+          },
+          {
+            type: "matching",
+            question: "Match the sentences:",
+            pairs: [
+              { left: "This test is easier", right: "Esta prova é mais fácil" },
+              { left: "She is taller", right: "Ela é mais alta" },
+              { left: "It is more beautiful", right: "É mais bonito" }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  test: [
+    {
+      type: "choice",
+      question: "Choose the correct sentence:",
+      options: ["This book is bigger than that book", "This book is big than that book", "This book is more big than that book"],
+      answer: "This book is bigger than that book"
+    },
+    {
+      type: "text",
+      question: "Translate: Ele é mais novo que o irmão dele.",
+      answer: "he is younger than his brother"
+    },
+    {
+      type: "text",
+      question: "Translate: difícil",
+      answer: "difficult"
+    },
+    {
+      type: "matching",
+      question: "Match:",
+      pairs: [
+        { left: "smaller", right: "menor" },
+        { left: "taller", right: "mais alto" },
+        { left: "more interesting", right: "mais interessante" }
+      ]
+    }
+  ]
+},
+{
+  title: "Lesson 10 - Superlatives",
+  modules: [
+    {
+      title: "Verbs and Grammar",
+      content: {
+        topic: "Superlatives: the biggest, the best, the most beautiful",
+        explanation: "Use superlatives to talk about the highest level of something in a group. We usually use the before the superlative.",
+        examples: [
+          "She is the tallest student in class → Ela é a aluna mais alta da sala",
+          "This is the biggest room in the school → Esta é a maior sala da escola",
+          "English is the easiest subject for me → Inglês é a matéria mais fácil para mim",
+          "This is the most beautiful place → Este é o lugar mais bonito",
+          "He is the best player → Ele é o melhor jogador",
+          "This is the worst day → Este é o pior dia"
+        ],
+        exercises: [
+          {
+            type: "choice",
+            question: "Choose the correct sentence:",
+            options: ["She is tallest student", "She is the tallest student", "She is the more tall student"],
+            answer: "She is the tallest student"
+          },
+          {
+            type: "text",
+            question: "Translate to English: Este é o lugar mais bonito.",
+            answer: "this is the most beautiful place"
+          },
+          {
+            type: "text",
+            question: "Translate to English: Ele é o melhor jogador.",
+            answer: "he is the best player"
+          },
+          {
+            type: "matching",
+            question: "Match the superlatives:",
+            pairs: [
+              { left: "the biggest", right: "o maior" },
+              { left: "the easiest", right: "o mais fácil" },
+              { left: "the best", right: "o melhor" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      title: "Vocabulary",
+      content: {
+        topic: "School subjects and places",
+        explanation: "Practice vocabulary to use with superlatives.",
+        examples: [
+          "subject → matéria",
+          "classroom → sala de aula",
+          "school → escola",
+          "student → aluno",
+          "teacher → professor",
+          "place → lugar",
+          "city → cidade",
+          "room → sala / quarto",
+          "player → jogador",
+          "team → time"
+        ],
+        exercises: [
+          {
+            type: "choice",
+            question: "What does 'subject' mean?",
+            options: ["matéria", "cidade", "jogador"],
+            answer: "matéria"
+          },
+          {
+            type: "text",
+            question: "Translate to English: cidade",
+            answer: "city"
+          },
+          {
+            type: "matching",
+            question: "Match the words:",
+            pairs: [
+              { left: "student", right: "aluno" },
+              { left: "teacher", right: "professor" },
+              { left: "team", right: "time" },
+              { left: "place", right: "lugar" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      title: "Conversation",
+      content: {
+        topic: "Talking about favorites",
+        explanation: "Practice asking and answering questions about favorites using superlatives.",
+        examples: [
+          "What is the best movie? → Qual é o melhor filme?",
+          "What is the most interesting subject? → Qual é a matéria mais interessante?",
+          "Who is the tallest student? → Quem é o aluno mais alto?",
+          "This is my favorite place → Este é meu lugar favorito"
+        ],
+        exercises: [
+          {
+            type: "choice",
+            question: "What question asks about a favorite movie?",
+            options: ["What is the best movie?", "Where is the movie?", "Is she watching a movie?"],
+            answer: "What is the best movie?"
+          },
+          {
+            type: "text",
+            question: "Translate to English: Qual é a melhor matéria?",
+            answer: "what is the best subject"
+          },
+          {
+            type: "matching",
+            question: "Match the questions:",
+            pairs: [
+              { left: "What is the best movie?", right: "Qual é o melhor filme?" },
+              { left: "Who is the tallest student?", right: "Quem é o aluno mais alto?" },
+              { left: "This is my favorite place", right: "Este é meu lugar favorito" }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  test: [
+    {
+      type: "choice",
+      question: "Choose the correct sentence:",
+      options: ["This is the most beautiful place", "This is the beautifulest place", "This is most beautiful place"],
+      answer: "This is the most beautiful place"
+    },
+    {
+      type: "text",
+      question: "Translate: Ela é a aluna mais alta da sala.",
+      answer: "she is the tallest student in class"
+    },
+    {
+      type: "text",
+      question: "Translate: matéria",
+      answer: "subject"
+    },
+    {
+      type: "matching",
+      question: "Match:",
+      pairs: [
+        { left: "the best", right: "o melhor" },
+        { left: "the worst", right: "o pior" },
+        { left: "the biggest", right: "o maior" }
+      ]
+    }
+  ]
+},
+{
+  title: "Lesson 11 - Some and Any",
+  modules: [
+    {
+      title: "Verbs and Grammar",
+      content: {
+        topic: "Some and Any",
+        explanation: "Use some in affirmative sentences and offers. Use any in negative sentences and questions.",
+        examples: [
+          "I have some books → Eu tenho alguns livros",
+          "She has some water → Ela tem um pouco de água",
+          "I don't have any money → Eu não tenho nenhum dinheiro",
+          "Do you have any questions? → Você tem alguma pergunta?",
+          "There are some students in the classroom → Há alguns alunos na sala",
+          "There aren't any chairs here → Não há cadeiras aqui"
+        ],
+        exercises: [
+          {
+            type: "choice",
+            question: "Choose the correct sentence:",
+            options: ["I have any books", "I have some books", "I don't have some books"],
+            answer: "I have some books"
+          },
+          {
+            type: "text",
+            question: "Translate to English: Eu não tenho nenhum dinheiro.",
+            answer: "i don't have any money"
+          },
+          {
+            type: "text",
+            question: "Translate to English: Você tem alguma pergunta?",
+            answer: "do you have any questions"
+          },
+          {
+            type: "matching",
+            question: "Match the sentences:",
+            pairs: [
+              { left: "I have some water", right: "Eu tenho um pouco de água" },
+              { left: "Do you have any questions?", right: "Você tem alguma pergunta?" },
+              { left: "There aren't any chairs", right: "Não há cadeiras" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      title: "Vocabulary",
+      content: {
+        topic: "Food and objects",
+        explanation: "Practice words that can be used with some and any.",
+        examples: [
+          "water → água",
+          "juice → suco",
+          "milk → leite",
+          "bread → pão",
+          "rice → arroz",
+          "money → dinheiro",
+          "book → livro",
+          "chair → cadeira",
+          "question → pergunta",
+          "student → aluno"
+        ],
+        exercises: [
+          {
+            type: "choice",
+            question: "What does 'money' mean?",
+            options: ["dinheiro", "pergunta", "cadeira"],
+            answer: "dinheiro"
+          },
+          {
+            type: "text",
+            question: "Translate to English: pergunta",
+            answer: "question"
+          },
+          {
+            type: "matching",
+            question: "Match the words:",
+            pairs: [
+              { left: "water", right: "água" },
+              { left: "juice", right: "suco" },
+              { left: "chair", right: "cadeira" },
+              { left: "rice", right: "arroz" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      title: "Writing Practice",
+      content: {
+        topic: "Using some and any",
+        explanation: "Practice writing affirmative, negative and question sentences.",
+        examples: [
+          "I have some friends → Eu tenho alguns amigos",
+          "I don't have any questions → Eu não tenho nenhuma pergunta",
+          "Are there any students here? → Há alunos aqui?"
+        ],
+        exercises: [
+          {
+            type: "text",
+            question: "Translate to English: Eu tenho alguns amigos.",
+            answer: "i have some friends"
+          },
+          {
+            type: "choice",
+            question: "Choose the correct question:",
+            options: ["Do you have some questions?", "Do you have any questions?", "You have any questions?"],
+            answer: "Do you have any questions?"
+          },
+          {
+            type: "matching",
+            question: "Match:",
+            pairs: [
+              { left: "some friends", right: "alguns amigos" },
+              { left: "any questions", right: "alguma pergunta / nenhuma pergunta" },
+              { left: "some water", right: "um pouco de água" }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  test: [
+    {
+      type: "choice",
+      question: "Choose the correct sentence:",
+      options: ["I don't have any questions", "I don't have some questions", "I not have any questions"],
+      answer: "I don't have any questions"
+    },
+    {
+      type: "text",
+      question: "Translate: Há alguns alunos na sala.",
+      answer: "there are some students in the classroom"
+    },
+    {
+      type: "text",
+      question: "Translate: Você tem algum livro?",
+      answer: "do you have any books"
+    },
+    {
+      type: "matching",
+      question: "Match:",
+      pairs: [
+        { left: "money", right: "dinheiro" },
+        { left: "question", right: "pergunta" },
+        { left: "bread", right: "pão" }
+      ]
+    }
+  ]
+},
+{
+  title: "Lesson 12 - Should and Must",
+  modules: [
+    {
+      title: "Verbs and Grammar",
+      content: {
+        topic: "Advice and obligation",
+        explanation: "Use should to give advice. Use must to talk about obligation or something very important.",
+        examples: [
+          "You should study every day → Você deveria estudar todos os dias",
+          "You should drink water → Você deveria beber água",
+          "She should practice more → Ela deveria praticar mais",
+          "You must do your homework → Você deve fazer sua lição de casa",
+          "Students must respect the teacher → Os alunos devem respeitar o professor",
+          "You must not use your phone in class → Você não deve usar o celular na aula"
+        ],
+        exercises: [
+          {
+            type: "choice",
+            question: "Choose the sentence that gives advice:",
+            options: ["You should study", "You studied yesterday", "You are studying now"],
+            answer: "You should study"
+          },
+          {
+            type: "text",
+            question: "Translate to English: Você deveria beber água.",
+            answer: "you should drink water"
+          },
+          {
+            type: "text",
+            question: "Translate to English: Você deve fazer sua lição de casa.",
+            answer: "you must do your homework"
+          },
+          {
+            type: "matching",
+            question: "Match the sentences:",
+            pairs: [
+              { left: "You should rest", right: "Você deveria descansar" },
+              { left: "You must study", right: "Você deve estudar" },
+              { left: "You must not use your phone", right: "Você não deve usar o celular" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      title: "Vocabulary",
+      content: {
+        topic: "Rules and advice",
+        explanation: "Practice words and expressions used for school rules and advice.",
+        examples: [
+          "rule → regra",
+          "homework → lição de casa",
+          "respect → respeitar",
+          "listen → ouvir",
+          "practice → praticar",
+          "rest → descansar",
+          "drink water → beber água",
+          "use the phone → usar o celular",
+          "arrive on time → chegar no horário",
+          "be quiet → ficar em silêncio"
+        ],
+        exercises: [
+          {
+            type: "choice",
+            question: "What does 'rule' mean?",
+            options: ["regra", "água", "horário"],
+            answer: "regra"
+          },
+          {
+            type: "text",
+            question: "Translate to English: respeitar",
+            answer: "respect"
+          },
+          {
+            type: "matching",
+            question: "Match the vocabulary:",
+            pairs: [
+              { left: "homework", right: "lição de casa" },
+              { left: "rest", right: "descansar" },
+              { left: "arrive on time", right: "chegar no horário" },
+              { left: "be quiet", right: "ficar em silêncio" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      title: "Conversation",
+      content: {
+        topic: "Giving advice",
+        explanation: "Practice short conversations using should and must.",
+        examples: [
+          "A: I am tired. → Eu estou cansado.",
+          "B: You should rest. → Você deveria descansar.",
+          "A: I have a test tomorrow. → Eu tenho uma prova amanhã.",
+          "B: You must study today. → Você deve estudar hoje.",
+          "A: Can I use my phone? → Posso usar meu celular?",
+          "B: You must not use your phone in class. → Você não deve usar o celular na aula."
+        ],
+        exercises: [
+          {
+            type: "choice",
+            question: "What advice can you give to someone tired?",
+            options: ["You should rest", "You must run", "You are reading"],
+            answer: "You should rest"
+          },
+          {
+            type: "text",
+            question: "Translate to English: Você deve estudar hoje.",
+            answer: "you must study today"
+          },
+          {
+            type: "matching",
+            question: "Match:",
+            pairs: [
+              { left: "I am tired", right: "Eu estou cansado" },
+              { left: "You should rest", right: "Você deveria descansar" },
+              { left: "You must study today", right: "Você deve estudar hoje" }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  test: [
+    {
+      type: "choice",
+      question: "Should is used for:",
+      options: ["advice", "past actions", "actions happening now"],
+      answer: "advice"
+    },
+    {
+      type: "text",
+      question: "Translate: Você deveria praticar mais.",
+      answer: "you should practice more"
+    },
+    {
+      type: "text",
+      question: "Translate: Os alunos devem respeitar o professor.",
+      answer: "students must respect the teacher"
+    },
+    {
+      type: "matching",
+      question: "Match:",
+      pairs: [
+        { left: "rule", right: "regra" },
+        { left: "homework", right: "lição de casa" },
+        { left: "drink water", right: "beber água" }
+      ]
+    }
+  ]
+}
+,
+{
+  title: "Lesson 13 - Future with Will",
+  modules: [
+    {
+      title: "Verbs and Grammar",
+      content: {
+        topic: "Future with Will",
+        explanation: "Use will to talk about future decisions, predictions, promises and spontaneous ideas.",
+        examples: [
+          "I will study tomorrow → Eu vou estudar amanhã",
+          "She will travel next week → Ela vai viajar na próxima semana",
+          "They will play soccer on Friday → Eles vão jogar futebol na sexta-feira",
+          "I think it will rain → Eu acho que vai chover",
+          "We will help you → Nós vamos te ajudar",
+          "He will be a great teacher → Ele será um ótimo professor"
+        ],
+        exercises: [
+          {
+            type: "choice",
+            question: "Choose the correct future sentence:",
+            options: ["I will study tomorrow", "I studied tomorrow", "I studying tomorrow"],
+            answer: "I will study tomorrow"
+          },
+          {
+            type: "text",
+            question: "Translate to English: Eu vou estudar amanhã.",
+            answer: "i will study tomorrow"
+          },
+          {
+            type: "text",
+            question: "Translate to English: Ela vai viajar na próxima semana.",
+            answer: "she will travel next week"
+          },
+          {
+            type: "matching",
+            question: "Match the sentences:",
+            pairs: [
+              { left: "I will study", right: "Eu vou estudar" },
+              { left: "She will travel", right: "Ela vai viajar" },
+              { left: "They will play", right: "Eles vão jogar" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      title: "Vocabulary",
+      content: {
+        topic: "Future time expressions",
+        explanation: "Use future time expressions to say when something will happen.",
+        examples: [
+          "tomorrow → amanhã",
+          "next week → próxima semana",
+          "next month → próximo mês",
+          "next year → próximo ano",
+          "soon → em breve",
+          "later → mais tarde",
+          "tonight → hoje à noite",
+          "on Friday → na sexta-feira",
+          "in the future → no futuro",
+          "one day → um dia"
+        ],
+        exercises: [
+          {
+            type: "choice",
+            question: "What does 'tomorrow' mean?",
+            options: ["ontem", "amanhã", "hoje"],
+            answer: "amanhã"
+          },
+          {
+            type: "text",
+            question: "Translate to English: próxima semana",
+            answer: "next week"
+          },
+          {
+            type: "matching",
+            question: "Match the expressions:",
+            pairs: [
+              { left: "soon", right: "em breve" },
+              { left: "later", right: "mais tarde" },
+              { left: "next month", right: "próximo mês" },
+              { left: "one day", right: "um dia" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      title: "Writing Practice",
+      content: {
+        topic: "Writing about the future",
+        explanation: "Practice writing short future sentences using will.",
+        examples: [
+          "I will learn English → Eu vou aprender inglês",
+          "We will have a test next week → Nós teremos uma prova na próxima semana",
+          "They will visit their grandmother → Eles vão visitar a avó deles"
+        ],
+        exercises: [
+          {
+            type: "text",
+            question: "Translate to English: Nós teremos uma prova na próxima semana.",
+            answer: "we will have a test next week"
+          },
+          {
+            type: "choice",
+            question: "Choose the correct sentence:",
+            options: ["They will visit their grandmother", "They visited next week", "They will visited grandmother"],
+            answer: "They will visit their grandmother"
+          },
+          {
+            type: "matching",
+            question: "Match:",
+            pairs: [
+              { left: "I will learn English", right: "Eu vou aprender inglês" },
+              { left: "We will help you", right: "Nós vamos te ajudar" },
+              { left: "It will rain", right: "Vai chover" }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  test: [
+    {
+      type: "choice",
+      question: "Choose the correct sentence:",
+      options: ["I will travel tomorrow", "I travel yesterday", "I will traveled tomorrow"],
+      answer: "I will travel tomorrow"
+    },
+    {
+      type: "text",
+      question: "Translate: Eu vou te ajudar.",
+      answer: "i will help you"
+    },
+    {
+      type: "text",
+      question: "Translate: próximo mês",
+      answer: "next month"
+    },
+    {
+      type: "matching",
+      question: "Match:",
+      pairs: [
+        { left: "tomorrow", right: "amanhã" },
+        { left: "next year", right: "próximo ano" },
+        { left: "soon", right: "em breve" }
+      ]
+    }
+  ]
+},
+{
+  title: "Lesson 14 - Going To",
+  modules: [
+    {
+      title: "Verbs and Grammar",
+      content: {
+        topic: "Future with Going To",
+        explanation: "Use going to to talk about plans and intentions for the future.",
+        examples: [
+          "I am going to study tonight → Eu vou estudar hoje à noite",
+          "She is going to visit her friend → Ela vai visitar a amiga dela",
+          "They are going to play soccer → Eles vão jogar futebol",
+          "We are going to watch a movie → Nós vamos assistir a um filme",
+          "He is going to buy a new book → Ele vai comprar um livro novo",
+          "Are you going to travel? → Você vai viajar?"
+        ],
+        exercises: [
+          {
+            type: "choice",
+            question: "Choose the correct sentence:",
+            options: ["I am going to study", "I going study", "I am go to study"],
+            answer: "I am going to study"
+          },
+          {
+            type: "text",
+            question: "Translate to English: Ela vai visitar a amiga dela.",
+            answer: "she is going to visit her friend"
+          },
+          {
+            type: "text",
+            question: "Translate to English: Nós vamos assistir a um filme.",
+            answer: "we are going to watch a movie"
+          },
+          {
+            type: "matching",
+            question: "Match the sentences:",
+            pairs: [
+              { left: "I am going to study", right: "Eu vou estudar" },
+              { left: "She is going to visit", right: "Ela vai visitar" },
+              { left: "They are going to play", right: "Eles vão jogar" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      title: "Vocabulary",
+      content: {
+        topic: "Plans and activities",
+        explanation: "Practice vocabulary related to plans and future activities.",
+        examples: [
+          "study → estudar",
+          "travel → viajar",
+          "visit → visitar",
+          "watch → assistir",
+          "buy → comprar",
+          "sell → vender",
+          "cook → cozinhar",
+          "clean → limpar",
+          "play soccer → jogar futebol",
+          "go out → sair"
+        ],
+        exercises: [
+          {
+            type: "choice",
+            question: "What does 'buy' mean?",
+            options: ["vender", "comprar", "limpar"],
+            answer: "comprar"
+          },
+          {
+            type: "text",
+            question: "Translate to English: cozinhar",
+            answer: "cook"
+          },
+          {
+            type: "matching",
+            question: "Match the activities:",
+            pairs: [
+              { left: "travel", right: "viajar" },
+              { left: "watch", right: "assistir" },
+              { left: "clean", right: "limpar" },
+              { left: "go out", right: "sair" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      title: "Conversation",
+      content: {
+        topic: "Talking about plans",
+        explanation: "Practice short conversations using going to.",
+        examples: [
+          "A: What are you going to do tonight? → O que você vai fazer hoje à noite?",
+          "B: I am going to study. → Eu vou estudar.",
+          "A: Are you going to travel? → Você vai viajar?",
+          "B: No, I am going to stay home. → Não, eu vou ficar em casa."
+        ],
+        exercises: [
+          {
+            type: "choice",
+            question: "Choose the question about plans:",
+            options: ["What are you going to do tonight?", "What did you do yesterday?", "Where are you now?"],
+            answer: "What are you going to do tonight?"
+          },
+          {
+            type: "text",
+            question: "Translate to English: Você vai viajar?",
+            answer: "are you going to travel"
+          },
+          {
+            type: "matching",
+            question: "Match:",
+            pairs: [
+              { left: "I am going to stay home", right: "Eu vou ficar em casa" },
+              { left: "Are you going to travel?", right: "Você vai viajar?" },
+              { left: "What are you going to do?", right: "O que você vai fazer?" }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  test: [
+    {
+      type: "choice",
+      question: "Going to is usually used for:",
+      options: ["plans and intentions", "past actions", "daily routine only"],
+      answer: "plans and intentions"
+    },
+    {
+      type: "text",
+      question: "Translate: Eu vou estudar hoje à noite.",
+      answer: "i am going to study tonight"
+    },
+    {
+      type: "text",
+      question: "Translate: Eles vão jogar futebol.",
+      answer: "they are going to play soccer"
+    },
+    {
+      type: "matching",
+      question: "Match:",
+      pairs: [
+        { left: "buy", right: "comprar" },
+        { left: "sell", right: "vender" },
+        { left: "go out", right: "sair" }
+      ]
+    }
+  ]
+},
+{
+  title: "Lesson 15 - Present Perfect",
+  modules: [
+    {
+      title: "Verbs and Grammar",
+      content: {
+        topic: "Present Perfect: have / has + past participle",
+        explanation: "Use the present perfect to talk about experiences, recent actions or actions connected to the present.",
+        examples: [
+          "I have visited São Paulo → Eu visitei São Paulo / Eu já visitei São Paulo",
+          "She has studied English → Ela estudou inglês / Ela tem estudado inglês",
+          "They have finished the activity → Eles terminaram a atividade",
+          "He has eaten breakfast → Ele tomou café da manhã",
+          "We have watched this movie → Nós assistimos a este filme",
+          "Have you ever traveled by plane? → Você já viajou de avião?"
+        ],
+        exercises: [
+          {
+            type: "choice",
+            question: "Choose the correct present perfect sentence:",
+            options: ["She has studied English", "She have studied English", "She has study English"],
+            answer: "She has studied English"
+          },
+          {
+            type: "text",
+            question: "Translate to English: Eu já visitei São Paulo.",
+            answer: "i have visited são paulo"
+          },
+          {
+            type: "text",
+            question: "Translate to English: Eles terminaram a atividade.",
+            answer: "they have finished the activity"
+          },
+          {
+            type: "matching",
+            question: "Match the sentences:",
+            pairs: [
+              { left: "I have visited", right: "Eu visitei / Eu já visitei" },
+              { left: "She has studied", right: "Ela estudou / Ela tem estudado" },
+              { left: "They have finished", right: "Eles terminaram" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      title: "Vocabulary",
+      content: {
+        topic: "Past participles",
+        explanation: "Practice common past participles used with present perfect.",
+        examples: [
+          "visited → visitado",
+          "studied → estudado",
+          "finished → terminado",
+          "watched → assistido",
+          "played → jogado",
+          "eaten → comido",
+          "seen → visto",
+          "been → estado / sido",
+          "done → feito",
+          "written → escrito"
+        ],
+        exercises: [
+          {
+            type: "choice",
+            question: "What is the past participle of eat?",
+            options: ["eated", "ate", "eaten"],
+            answer: "eaten"
+          },
+          {
+            type: "text",
+            question: "Translate to English: visto",
+            answer: "seen"
+          },
+          {
+            type: "matching",
+            question: "Match the past participles:",
+            pairs: [
+              { left: "done", right: "feito" },
+              { left: "written", right: "escrito" },
+              { left: "finished", right: "terminado" },
+              { left: "been", right: "estado / sido" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      title: "Conversation",
+      content: {
+        topic: "Talking about experiences",
+        explanation: "Use present perfect to ask and answer about life experiences.",
+        examples: [
+          "Have you ever traveled by plane? → Você já viajou de avião?",
+          "Yes, I have. → Sim, já.",
+          "No, I haven't. → Não, nunca.",
+          "I have never been to Canada → Eu nunca estive no Canadá",
+          "She has already finished the homework → Ela já terminou a lição de casa"
+        ],
+        exercises: [
+          {
+            type: "choice",
+            question: "Choose the correct answer:",
+            options: ["Yes, I have", "Yes, I has", "Yes, I did have"],
+            answer: "Yes, I have"
+          },
+          {
+            type: "text",
+            question: "Translate to English: Eu nunca estive no Canadá.",
+            answer: "i have never been to canada"
+          },
+          {
+            type: "matching",
+            question: "Match:",
+            pairs: [
+              { left: "Have you ever traveled?", right: "Você já viajou?" },
+              { left: "Yes, I have", right: "Sim, já" },
+              { left: "No, I haven't", right: "Não, nunca" }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  test: [
+    {
+      type: "choice",
+      question: "Choose the correct sentence:",
+      options: ["I have seen this movie", "I has seen this movie", "I have saw this movie"],
+      answer: "I have seen this movie"
+    },
+    {
+      type: "text",
+      question: "Translate: Ela já terminou a lição de casa.",
+      answer: "she has already finished the homework"
+    },
+    {
+      type: "text",
+      question: "Translate: Você já viajou de avião?",
+      answer: "have you ever traveled by plane"
+    },
+    {
+      type: "matching",
+      question: "Match:",
+      pairs: [
+        { left: "seen", right: "visto" },
+        { left: "done", right: "feito" },
+        { left: "written", right: "escrito" }
+      ]
+    }
+  ]
+},
+{
+  title: "Lesson 16 - Past Continuous",
+  modules: [
+    {
+      title: "Verbs and Grammar",
+      content: {
+        topic: "Past Continuous: was / were + verb -ing",
+        explanation: "Use past continuous to talk about actions that were happening at a specific moment in the past.",
+        examples: [
+          "I was studying yesterday at 8 p.m. → Eu estava estudando ontem às 20h",
+          "She was watching TV → Ela estava assistindo TV",
+          "They were playing soccer → Eles estavam jogando futebol",
+          "We were talking to the teacher → Nós estávamos conversando com a professora",
+          "He was sleeping when I called → Ele estava dormindo quando eu liguei",
+          "Were you doing your homework? → Você estava fazendo sua lição de casa?"
+        ],
+        exercises: [
+          {
+            type: "choice",
+            question: "Choose the correct past continuous sentence:",
+            options: ["She was watching TV", "She were watching TV", "She was watched TV"],
+            answer: "She was watching TV"
+          },
+          {
+            type: "text",
+            question: "Translate to English: Eu estava estudando ontem.",
+            answer: "i was studying yesterday"
+          },
+          {
+            type: "text",
+            question: "Translate to English: Eles estavam jogando futebol.",
+            answer: "they were playing soccer"
+          },
+          {
+            type: "matching",
+            question: "Match the sentences:",
+            pairs: [
+              { left: "I was studying", right: "Eu estava estudando" },
+              { left: "She was watching TV", right: "Ela estava assistindo TV" },
+              { left: "They were playing", right: "Eles estavam jogando" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      title: "Vocabulary",
+      content: {
+        topic: "Actions in progress",
+        explanation: "Practice action verbs commonly used with past continuous.",
+        examples: [
+          "studying → estudando",
+          "watching → assistindo",
+          "playing → jogando",
+          "talking → conversando",
+          "sleeping → dormindo",
+          "eating → comendo",
+          "reading → lendo",
+          "writing → escrevendo",
+          "listening → ouvindo",
+          "walking → andando"
+        ],
+        exercises: [
+          {
+            type: "choice",
+            question: "What does 'sleeping' mean?",
+            options: ["dormindo", "lendo", "andando"],
+            answer: "dormindo"
+          },
+          {
+            type: "text",
+            question: "Translate to English: escrevendo",
+            answer: "writing"
+          },
+          {
+            type: "matching",
+            question: "Match the actions:",
+            pairs: [
+              { left: "reading", right: "lendo" },
+              { left: "walking", right: "andando" },
+              { left: "listening", right: "ouvindo" },
+              { left: "eating", right: "comendo" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      title: "Writing Practice",
+      content: {
+        topic: "Writing past continuous sentences",
+        explanation: "Practice writing sentences about actions that were happening in the past.",
+        examples: [
+          "I was reading a book → Eu estava lendo um livro",
+          "They were listening to music → Eles estavam ouvindo música",
+          "We were eating dinner → Nós estávamos jantando"
+        ],
+        exercises: [
+          {
+            type: "text",
+            question: "Translate to English: Eu estava lendo um livro.",
+            answer: "i was reading a book"
+          },
+          {
+            type: "choice",
+            question: "Choose the correct sentence:",
+            options: ["They were listening to music", "They was listening to music", "They were listened to music"],
+            answer: "They were listening to music"
+          },
+          {
+            type: "matching",
+            question: "Match:",
+            pairs: [
+              { left: "We were eating dinner", right: "Nós estávamos jantando" },
+              { left: "He was sleeping", right: "Ele estava dormindo" },
+              { left: "I was writing", right: "Eu estava escrevendo" }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  test: [
+    {
+      type: "choice",
+      question: "Past continuous is formed with:",
+      options: ["was/were + verb-ing", "will + verb", "have/has + participle"],
+      answer: "was/were + verb-ing"
+    },
+    {
+      type: "text",
+      question: "Translate: Ela estava assistindo TV.",
+      answer: "she was watching tv"
+    },
+    {
+      type: "text",
+      question: "Translate: Nós estávamos conversando com a professora.",
+      answer: "we were talking to the teacher"
+    },
+    {
+      type: "matching",
+      question: "Match:",
+      pairs: [
+        { left: "studying", right: "estudando" },
+        { left: "sleeping", right: "dormindo" },
+        { left: "writing", right: "escrevendo" }
+      ]
+    }
+  ]
+}
+,
+{
+  title: "Lesson 17 - First Conditional",
+  modules: [
+    {
+      title: "Verbs and Grammar",
+      content: {
+        topic: "First Conditional: If + Simple Present, Will + Verb",
+        explanation: "Use the first conditional to talk about real possibilities in the future.",
+        examples: [
+          "If I study, I will pass the test → Se eu estudar, eu vou passar na prova",
+          "If it rains, we will stay home → Se chover, nós vamos ficar em casa",
+          "If she practices, she will improve → Se ela praticar, ela vai melhorar",
+          "If they arrive early, we will start the class → Se eles chegarem cedo, nós vamos começar a aula"
+        ],
+        exercises: [
+          {
+            type: "choice",
+            question: "Choose the correct first conditional sentence:",
+            options: ["If I study, I will pass", "If I will study, I pass", "If I studied, I will pass"],
+            answer: "If I study, I will pass"
+          },
+          {
+            type: "text",
+            question: "Translate to English: Se chover, nós vamos ficar em casa.",
+            answer: "if it rains, we will stay home"
+          },
+          {
+            type: "matching",
+            question: "Match:",
+            pairs: [
+              { left: "If I study", right: "Se eu estudar" },
+              { left: "I will pass", right: "Eu vou passar" },
+              { left: "If it rains", right: "Se chover" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      title: "Vocabulary",
+      content: {
+        topic: "Future possibilities",
+        explanation: "Practice words used to talk about future situations.",
+        examples: [
+          "test → prova",
+          "rain → chover",
+          "pass → passar",
+          "fail → reprovar / falhar",
+          "improve → melhorar",
+          "arrive → chegar",
+          "early → cedo",
+          "late → atrasado",
+          "start → começar",
+          "stay home → ficar em casa"
+        ],
+        exercises: [
+          {
+            type: "choice",
+            question: "What does 'improve' mean?",
+            options: ["melhorar", "começar", "chover"],
+            answer: "melhorar"
+          },
+          {
+            type: "text",
+            question: "Translate to English: chegar cedo",
+            answer: "arrive early"
+          },
+          {
+            type: "matching",
+            question: "Match:",
+            pairs: [
+              { left: "test", right: "prova" },
+              { left: "rain", right: "chover" },
+              { left: "stay home", right: "ficar em casa" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      title: "Writing Practice",
+      content: {
+        topic: "Writing first conditional sentences",
+        explanation: "Write complete sentences using if and will.",
+        examples: [
+          "If I have time, I will study → Se eu tiver tempo, eu vou estudar",
+          "If she calls me, I will answer → Se ela me ligar, eu vou atender",
+          "If we finish early, we will watch a movie → Se terminarmos cedo, vamos assistir a um filme"
+        ],
+        exercises: [
+          {
+            type: "text",
+            question: "Translate to English: Se eu tiver tempo, eu vou estudar.",
+            answer: "if i have time, i will study"
+          },
+          {
+            type: "choice",
+            question: "Choose the correct sentence:",
+            options: ["If she calls me, I will answer", "If she will call me, I answer", "If she called me, I will answer"],
+            answer: "If she calls me, I will answer"
+          }
+        ]
+      }
+    }
+  ],
+  test: [
+    {
+      type: "choice",
+      question: "First conditional talks about:",
+      options: ["real future possibilities", "finished past actions", "daily routine"],
+      answer: "real future possibilities"
+    },
+    {
+      type: "text",
+      question: "Translate: Se eu estudar, eu vou passar na prova.",
+      answer: "if i study, i will pass the test"
+    },
+    {
+      type: "matching",
+      question: "Match:",
+      pairs: [
+        { left: "early", right: "cedo" },
+        { left: "late", right: "atrasado" },
+        { left: "improve", right: "melhorar" }
+      ]
+    }
+  ]
+},
+{
+  title: "Lesson 18 - Second Conditional",
+  modules: [
+    {
+      title: "Verbs and Grammar",
+      content: {
+        topic: "Second Conditional: If + Simple Past, Would + Verb",
+        explanation: "Use the second conditional to talk about imaginary or unlikely situations.",
+        examples: [
+          "If I had money, I would travel → Se eu tivesse dinheiro, eu viajaria",
+          "If she studied more, she would improve → Se ela estudasse mais, ela melhoraria",
+          "If I were you, I would talk to the teacher → Se eu fosse você, eu falaria com o professor",
+          "If they lived here, they would study with us → Se eles morassem aqui, eles estudariam conosco"
+        ],
+        exercises: [
+          {
+            type: "choice",
+            question: "Choose the correct second conditional sentence:",
+            options: ["If I had money, I would travel", "If I have money, I would travel", "If I had money, I will travel"],
+            answer: "If I had money, I would travel"
+          },
+          {
+            type: "text",
+            question: "Translate to English: Se eu fosse você, eu falaria com o professor.",
+            answer: "if i were you, i would talk to the teacher"
+          },
+          {
+            type: "matching",
+            question: "Match:",
+            pairs: [
+              { left: "If I had money", right: "Se eu tivesse dinheiro" },
+              { left: "I would travel", right: "Eu viajaria" },
+              { left: "If I were you", right: "Se eu fosse você" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      title: "Vocabulary",
+      content: {
+        topic: "Imaginary situations",
+        explanation: "Practice vocabulary used in imaginary situations.",
+        examples: [
+          "money → dinheiro",
+          "dream → sonho",
+          "travel → viajar",
+          "country → país",
+          "city → cidade",
+          "teacher → professor",
+          "problem → problema",
+          "solution → solução",
+          "opportunity → oportunidade",
+          "choice → escolha"
+        ],
+        exercises: [
+          {
+            type: "choice",
+            question: "What does 'choice' mean?",
+            options: ["escolha", "dinheiro", "cidade"],
+            answer: "escolha"
+          },
+          {
+            type: "text",
+            question: "Translate to English: oportunidade",
+            answer: "opportunity"
+          },
+          {
+            type: "matching",
+            question: "Match:",
+            pairs: [
+              { left: "dream", right: "sonho" },
+              { left: "country", right: "país" },
+              { left: "solution", right: "solução" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      title: "Conversation",
+      content: {
+        topic: "What would you do?",
+        explanation: "Practice questions and answers using would.",
+        examples: [
+          "What would you do? → O que você faria?",
+          "I would study more → Eu estudaria mais",
+          "Would you travel? → Você viajaria?",
+          "Yes, I would → Sim, eu viajaria"
+        ],
+        exercises: [
+          {
+            type: "choice",
+            question: "How do you ask 'O que você faria?'",
+            options: ["What would you do?", "What will you do?", "What did you do?"],
+            answer: "What would you do?"
+          },
+          {
+            type: "text",
+            question: "Translate to English: Eu estudaria mais.",
+            answer: "i would study more"
+          }
+        ]
+      }
+    }
+  ],
+  test: [
+    {
+      type: "choice",
+      question: "Second conditional is used for:",
+      options: ["imaginary situations", "facts only", "actions happening now"],
+      answer: "imaginary situations"
+    },
+    {
+      type: "text",
+      question: "Translate: Se eu tivesse dinheiro, eu viajaria.",
+      answer: "if i had money, i would travel"
+    },
+    {
+      type: "matching",
+      question: "Match:",
+      pairs: [
+        { left: "money", right: "dinheiro" },
+        { left: "dream", right: "sonho" },
+        { left: "opportunity", right: "oportunidade" }
+      ]
+    }
+  ]
+},
+{
+  title: "Lesson 19 - Gerund and Infinitive",
+  modules: [
+    {
+      title: "Verbs and Grammar",
+      content: {
+        topic: "Gerund and Infinitive",
+        explanation: "Some verbs are followed by -ing, and some verbs are followed by to + verb.",
+        examples: [
+          "I enjoy studying English → Eu gosto de estudar inglês",
+          "She likes dancing → Ela gosta de dançar",
+          "I want to travel → Eu quero viajar",
+          "He needs to study → Ele precisa estudar",
+          "They decided to go home → Eles decidiram ir para casa",
+          "We love watching movies → Nós amamos assistir filmes"
+        ],
+        exercises: [
+          {
+            type: "choice",
+            question: "Choose the correct sentence:",
+            options: ["I enjoy studying English", "I enjoy to study English", "I enjoy study English"],
+            answer: "I enjoy studying English"
+          },
+          {
+            type: "text",
+            question: "Translate to English: Eu quero viajar.",
+            answer: "i want to travel"
+          },
+          {
+            type: "matching",
+            question: "Match:",
+            pairs: [
+              { left: "enjoy studying", right: "gostar de estudar" },
+              { left: "want to travel", right: "querer viajar" },
+              { left: "need to study", right: "precisar estudar" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      title: "Vocabulary",
+      content: {
+        topic: "Activities and preferences",
+        explanation: "Practice activities used with like, love, enjoy, want and need.",
+        examples: [
+          "studying → estudando",
+          "dancing → dançando",
+          "singing → cantando",
+          "traveling → viajando",
+          "watching movies → assistindo filmes",
+          "playing games → jogando jogos",
+          "reading books → lendo livros",
+          "to learn → aprender",
+          "to practice → praticar",
+          "to improve → melhorar"
+        ],
+        exercises: [
+          {
+            type: "choice",
+            question: "What does 'reading books' mean?",
+            options: ["lendo livros", "assistindo filmes", "jogando jogos"],
+            answer: "lendo livros"
+          },
+          {
+            type: "text",
+            question: "Translate to English: praticar",
+            answer: "practice"
+          },
+          {
+            type: "matching",
+            question: "Match:",
+            pairs: [
+              { left: "dancing", right: "dançando" },
+              { left: "singing", right: "cantando" },
+              { left: "traveling", right: "viajando" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      title: "Writing Practice",
+      content: {
+        topic: "Writing about likes and plans",
+        explanation: "Use gerund after enjoy/love/like and infinitive after want/need/decide.",
+        examples: [
+          "I like learning new words → Eu gosto de aprender palavras novas",
+          "She wants to improve her English → Ela quer melhorar o inglês dela",
+          "They need to practice more → Eles precisam praticar mais"
+        ],
+        exercises: [
+          {
+            type: "text",
+            question: "Translate to English: Ela quer melhorar o inglês dela.",
+            answer: "she wants to improve her english"
+          },
+          {
+            type: "choice",
+            question: "Choose the correct sentence:",
+            options: ["They need to practice more", "They need practicing more", "They need practice more"],
+            answer: "They need to practice more"
+          }
+        ]
+      }
+    }
+  ],
+  test: [
+    {
+      type: "choice",
+      question: "After enjoy, we usually use:",
+      options: ["verb-ing", "to + verb", "will + verb"],
+      answer: "verb-ing"
+    },
+    {
+      type: "text",
+      question: "Translate: Eu gosto de estudar inglês.",
+      answer: "i enjoy studying english"
+    },
+    {
+      type: "matching",
+      question: "Match:",
+      pairs: [
+        { left: "to improve", right: "melhorar" },
+        { left: "playing games", right: "jogando jogos" },
+        { left: "reading books", right: "lendo livros" }
+      ]
+    }
+  ]
+},
+{
+  title: "Lesson 20 - Too and Enough",
+  modules: [
+    {
+      title: "Verbs and Grammar",
+      content: {
+        topic: "Too and Enough",
+        explanation: "Use too to say something is more than necessary. Use enough to say something is sufficient.",
+        examples: [
+          "This bag is too heavy → Esta bolsa é pesada demais",
+          "The test is too difficult → A prova é difícil demais",
+          "She is old enough to drive → Ela tem idade suficiente para dirigir",
+          "I am not tall enough → Eu não sou alto o suficiente",
+          "This room is big enough → Esta sala é grande o suficiente",
+          "It is too late to go out → Está tarde demais para sair"
+        ],
+        exercises: [
+          {
+            type: "choice",
+            question: "Choose the correct sentence:",
+            options: ["This bag is too heavy", "This bag is enough heavy", "This bag too is heavy"],
+            answer: "This bag is too heavy"
+          },
+          {
+            type: "text",
+            question: "Translate to English: Eu não sou alto o suficiente.",
+            answer: "i am not tall enough"
+          },
+          {
+            type: "matching",
+            question: "Match:",
+            pairs: [
+              { left: "too heavy", right: "pesado demais" },
+              { left: "big enough", right: "grande o suficiente" },
+              { left: "too late", right: "tarde demais" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      title: "Vocabulary",
+      content: {
+        topic: "Adjectives with too and enough",
+        explanation: "Practice adjectives used to describe intensity and sufficiency.",
+        examples: [
+          "heavy → pesado",
+          "light → leve",
+          "difficult → difícil",
+          "easy → fácil",
+          "old → velho / idade suficiente",
+          "young → jovem",
+          "tall → alto",
+          "short → baixo",
+          "big → grande",
+          "small → pequeno"
+        ],
+        exercises: [
+          {
+            type: "choice",
+            question: "What does 'heavy' mean?",
+            options: ["pesado", "leve", "pequeno"],
+            answer: "pesado"
+          },
+          {
+            type: "text",
+            question: "Translate to English: fácil",
+            answer: "easy"
+          },
+          {
+            type: "matching",
+            question: "Match:",
+            pairs: [
+              { left: "light", right: "leve" },
+              { left: "difficult", right: "difícil" },
+              { left: "young", right: "jovem" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      title: "Writing Practice",
+      content: {
+        topic: "Writing with too and enough",
+        explanation: "Practice describing situations using too and enough.",
+        examples: [
+          "The coffee is too hot → O café está quente demais",
+          "The chair is not comfortable enough → A cadeira não é confortável o suficiente",
+          "The activity is easy enough → A atividade é fácil o suficiente"
+        ],
+        exercises: [
+          {
+            type: "text",
+            question: "Translate to English: O café está quente demais.",
+            answer: "the coffee is too hot"
+          },
+          {
+            type: "choice",
+            question: "Choose the correct sentence:",
+            options: ["The activity is easy enough", "The activity is enough easy", "The activity enough is easy"],
+            answer: "The activity is easy enough"
+          }
+        ]
+      }
+    }
+  ],
+  test: [
+    {
+      type: "choice",
+      question: "Too means:",
+      options: ["demais", "suficiente", "nunca"],
+      answer: "demais"
+    },
+    {
+      type: "text",
+      question: "Translate: Esta sala é grande o suficiente.",
+      answer: "this room is big enough"
+    },
+    {
+      type: "matching",
+      question: "Match:",
+      pairs: [
+        { left: "heavy", right: "pesado" },
+        { left: "easy", right: "fácil" },
+        { left: "small", right: "pequeno" }
+      ]
+    }
+  ]
+},
+{
+  title: "Lesson 21 - Relative Pronouns",
+  modules: [
+    {
+      title: "Verbs and Grammar",
+      content: {
+        topic: "Who, Which and That",
+        explanation: "Use who for people, which for things and animals, and that for people, things or animals.",
+        examples: [
+          "She is the teacher who helped me → Ela é a professora que me ajudou",
+          "This is the book which I bought → Este é o livro que eu comprei",
+          "He is the student that won the game → Ele é o aluno que venceu o jogo",
+          "This is the movie that I watched yesterday → Este é o filme que eu assisti ontem"
+        ],
+        exercises: [
+          {
+            type: "choice",
+            question: "Use who for:",
+            options: ["people", "places only", "objects only"],
+            answer: "people"
+          },
+          {
+            type: "text",
+            question: "Translate to English: Ela é a professora que me ajudou.",
+            answer: "she is the teacher who helped me"
+          },
+          {
+            type: "matching",
+            question: "Match:",
+            pairs: [
+              { left: "who", right: "pessoas" },
+              { left: "which", right: "coisas / animais" },
+              { left: "that", right: "pessoas, coisas ou animais" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      title: "Vocabulary",
+      content: {
+        topic: "People and objects",
+        explanation: "Practice nouns used with relative pronouns.",
+        examples: [
+          "teacher → professor",
+          "student → aluno",
+          "friend → amigo",
+          "person → pessoa",
+          "book → livro",
+          "movie → filme",
+          "game → jogo",
+          "song → música",
+          "place → lugar",
+          "animal → animal"
+        ],
+        exercises: [
+          {
+            type: "choice",
+            question: "What does 'person' mean?",
+            options: ["pessoa", "música", "livro"],
+            answer: "pessoa"
+          },
+          {
+            type: "text",
+            question: "Translate to English: filme",
+            answer: "movie"
+          },
+          {
+            type: "matching",
+            question: "Match:",
+            pairs: [
+              { left: "song", right: "música" },
+              { left: "place", right: "lugar" },
+              { left: "friend", right: "amigo" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      title: "Writing Practice",
+      content: {
+        topic: "Describing people and things",
+        explanation: "Use relative pronouns to give more information.",
+        examples: [
+          "This is the friend who studies with me → Este é o amigo que estuda comigo",
+          "This is the song that I like → Esta é a música que eu gosto",
+          "This is the place which I visited → Este é o lugar que eu visitei"
+        ],
+        exercises: [
+          {
+            type: "text",
+            question: "Translate to English: Esta é a música que eu gosto.",
+            answer: "this is the song that i like"
+          },
+          {
+            type: "choice",
+            question: "Choose the correct sentence:",
+            options: ["This is the friend who studies with me", "This is the friend which studies with me", "This is the friend where studies with me"],
+            answer: "This is the friend who studies with me"
+          }
+        ]
+      }
+    }
+  ],
+  test: [
+    {
+      type: "choice",
+      question: "Which relative pronoun is best for people?",
+      options: ["who", "which", "when"],
+      answer: "who"
+    },
+    {
+      type: "text",
+      question: "Translate: Este é o livro que eu comprei.",
+      answer: "this is the book which i bought"
+    },
+    {
+      type: "matching",
+      question: "Match:",
+      pairs: [
+        { left: "teacher", right: "professor" },
+        { left: "student", right: "aluno" },
+        { left: "movie", right: "filme" }
+      ]
+    }
+  ]
+},
+{
+  title: "Lesson 22 - Phrasal Verbs",
+  modules: [
+    {
+      title: "Verbs and Grammar",
+      content: {
+        topic: "Common Phrasal Verbs",
+        explanation: "Phrasal verbs are verbs combined with small words like up, on, off, in or out. The meaning can change.",
+        examples: [
+          "Turn on the TV → Ligue a TV",
+          "Turn off the lights → Desligue as luzes",
+          "Wake up early → Acordar cedo",
+          "Get up at seven → Levantar às sete",
+          "Go out with friends → Sair com amigos",
+          "Look for my book → Procurar meu livro"
+        ],
+        exercises: [
+          {
+            type: "choice",
+            question: "What does 'turn on' mean?",
+            options: ["ligar", "desligar", "procurar"],
+            answer: "ligar"
+          },
+          {
+            type: "text",
+            question: "Translate to English: Desligue as luzes.",
+            answer: "turn off the lights"
+          },
+          {
+            type: "matching",
+            question: "Match:",
+            pairs: [
+              { left: "wake up", right: "acordar" },
+              { left: "get up", right: "levantar" },
+              { left: "look for", right: "procurar" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      title: "Vocabulary",
+      content: {
+        topic: "Daily phrasal verbs",
+        explanation: "Practice phrasal verbs used in daily situations.",
+        examples: [
+          "turn on → ligar",
+          "turn off → desligar",
+          "wake up → acordar",
+          "get up → levantar",
+          "go out → sair",
+          "come back → voltar",
+          "look for → procurar",
+          "put on → vestir / colocar",
+          "take off → tirar",
+          "sit down → sentar"
+        ],
+        exercises: [
+          {
+            type: "choice",
+            question: "What does 'come back' mean?",
+            options: ["voltar", "sair", "sentar"],
+            answer: "voltar"
+          },
+          {
+            type: "text",
+            question: "Translate to English: sentar",
+            answer: "sit down"
+          },
+          {
+            type: "matching",
+            question: "Match:",
+            pairs: [
+              { left: "put on", right: "vestir / colocar" },
+              { left: "take off", right: "tirar" },
+              { left: "go out", right: "sair" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      title: "Conversation",
+      content: {
+        topic: "Using phrasal verbs",
+        explanation: "Practice short commands and everyday phrases.",
+        examples: [
+          "Please, sit down → Por favor, sente-se",
+          "Turn off your phone → Desligue seu celular",
+          "I wake up at seven → Eu acordo às sete",
+          "I am looking for my notebook → Estou procurando meu caderno"
+        ],
+        exercises: [
+          {
+            type: "text",
+            question: "Translate to English: Eu acordo às sete.",
+            answer: "i wake up at seven"
+          },
+          {
+            type: "choice",
+            question: "Choose the correct command:",
+            options: ["Please, sit down", "Please, sit up down", "Please, down sit"],
+            answer: "Please, sit down"
+          }
+        ]
+      }
+    }
+  ],
+  test: [
+    {
+      type: "choice",
+      question: "What does 'turn off' mean?",
+      options: ["desligar", "ligar", "levantar"],
+      answer: "desligar"
+    },
+    {
+      type: "text",
+      question: "Translate: Estou procurando meu caderno.",
+      answer: "i am looking for my notebook"
+    },
+    {
+      type: "matching",
+      question: "Match:",
+      pairs: [
+        { left: "wake up", right: "acordar" },
+        { left: "get up", right: "levantar" },
+        { left: "sit down", right: "sentar" }
+      ]
+    }
+  ]
+},
+{
+  title: "Lesson 23 - Reading and Conversation Review",
+  modules: [
+    {
+      title: "Reading Practice",
+      content: {
+        topic: "A special school project",
+        explanation: "Read the text and practice comprehension.",
+        examples: [
+          "Last month, the students started a special English project at school. They created posters, practiced conversation and presented their ideas to the class.",
+          "Some students talked about their dreams. Others talked about technology, sports and music.",
+          "The teacher said that everyone did a great job because they tried to speak English with confidence."
+        ],
+        exercises: [
+          {
+            type: "choice",
+            question: "What did the students create?",
+            options: ["posters", "cars", "houses"],
+            answer: "posters"
+          },
+          {
+            type: "choice",
+            question: "What language did they practice?",
+            options: ["English", "French", "Spanish only"],
+            answer: "English"
+          },
+          {
+            type: "text",
+            question: "Translate to English: Eles apresentaram suas ideias.",
+            answer: "they presented their ideas"
+          }
+        ]
+      }
+    },
+    {
+      title: "Conversation",
+      content: {
+        topic: "Talking about projects",
+        explanation: "Practice questions and answers about projects, school and learning.",
+        examples: [
+          "What was your project about? → Sobre o que era o seu projeto?",
+          "My project was about technology → Meu projeto era sobre tecnologia",
+          "Did you speak English? → Você falou inglês?",
+          "Yes, I tried my best → Sim, eu dei o meu melhor"
+        ],
+        exercises: [
+          {
+            type: "choice",
+            question: "Choose the correct question:",
+            options: ["What was your project about?", "Where your project was?", "What did your project about?"],
+            answer: "What was your project about?"
+          },
+          {
+            type: "text",
+            question: "Translate to English: Eu dei o meu melhor.",
+            answer: "i tried my best"
+          },
+          {
+            type: "matching",
+            question: "Match:",
+            pairs: [
+              { left: "project", right: "projeto" },
+              { left: "confidence", right: "confiança" },
+              { left: "presented", right: "apresentaram" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      title: "Review",
+      content: {
+        topic: "Mixed grammar review",
+        explanation: "Review different grammar topics from Book Two.",
+        examples: [
+          "I have studied English → Present Perfect",
+          "If I study, I will pass → First Conditional",
+          "She was watching TV → Past Continuous",
+          "I want to travel → Infinitive"
+        ],
+        exercises: [
+          {
+            type: "choice",
+            question: "Which sentence is present perfect?",
+            options: ["I have studied English", "I studied yesterday", "I will study tomorrow"],
+            answer: "I have studied English"
+          },
+          {
+            type: "choice",
+            question: "Which sentence is past continuous?",
+            options: ["She was watching TV", "She watches TV", "She will watch TV"],
+            answer: "She was watching TV"
+          }
+        ]
+      }
+    }
+  ],
+  test: [
+    {
+      type: "choice",
+      question: "The text is about:",
+      options: ["a school project", "a restaurant", "a soccer game only"],
+      answer: "a school project"
+    },
+    {
+      type: "text",
+      question: "Translate: Meu projeto era sobre tecnologia.",
+      answer: "my project was about technology"
+    },
+    {
+      type: "matching",
+      question: "Match:",
+      pairs: [
+        { left: "confidence", right: "confiança" },
+        { left: "technology", right: "tecnologia" },
+        { left: "music", right: "música" }
+      ]
+    }
+  ]
+},
+{
+  title: "Lesson 24 - Final Review and Test",
+  modules: [
+    {
+      title: "Final Grammar Review",
+      content: {
+        topic: "Book Two Review",
+        explanation: "Review the most important grammar topics from Book Two.",
+        examples: [
+          "Comparative: This book is bigger than that book → Este livro é maior que aquele livro",
+          "Superlative: She is the tallest student → Ela é a aluna mais alta",
+          "Future: I will study tomorrow → Eu vou estudar amanhã",
+          "Going to: I am going to travel → Eu vou viajar",
+          "Present Perfect: I have seen this movie → Eu já vi este filme",
+          "Conditional: If I study, I will pass → Se eu estudar, eu vou passar"
+        ],
+        exercises: [
+          {
+            type: "choice",
+            question: "Choose the comparative sentence:",
+            options: ["This book is bigger than that book", "This is the biggest book", "I will read this book"],
+            answer: "This book is bigger than that book"
+          },
+          {
+            type: "choice",
+            question: "Choose the future with going to:",
+            options: ["I am going to travel", "I traveled yesterday", "I have traveled"],
+            answer: "I am going to travel"
+          },
+          {
+            type: "text",
+            question: "Translate to English: Eu já vi este filme.",
+            answer: "i have seen this movie"
+          }
+        ]
+      }
+    },
+    {
+      title: "Vocabulary Review",
+      content: {
+        topic: "Book Two vocabulary",
+        explanation: "Review important vocabulary from the book.",
+        examples: [
+          "future → futuro",
+          "teacher → professor",
+          "student → aluno",
+          "homework → lição de casa",
+          "opportunity → oportunidade",
+          "dream → sonho",
+          "project → projeto",
+          "confidence → confiança",
+          "problem → problema",
+          "solution → solução"
+        ],
+        exercises: [
+          {
+            type: "choice",
+            question: "What does 'confidence' mean?",
+            options: ["confiança", "problema", "solução"],
+            answer: "confiança"
+          },
+          {
+            type: "text",
+            question: "Translate to English: oportunidade",
+            answer: "opportunity"
+          },
+          {
+            type: "matching",
+            question: "Match:",
+            pairs: [
+              { left: "dream", right: "sonho" },
+              { left: "homework", right: "lição de casa" },
+              { left: "solution", right: "solução" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      title: "Final Writing",
+      content: {
+        topic: "Writing about yourself",
+        explanation: "Write sentences about your plans, experiences and dreams.",
+        examples: [
+          "I have studied English for many months → Eu estudo inglês há muitos meses",
+          "I am going to improve my speaking → Eu vou melhorar minha fala",
+          "If I practice, I will learn more → Se eu praticar, eu vou aprender mais",
+          "My dream is to speak English with confidence → Meu sonho é falar inglês com confiança"
+        ],
+        exercises: [
+          {
+            type: "text",
+            question: "Translate to English: Meu sonho é falar inglês com confiança.",
+            answer: "my dream is to speak english with confidence"
+          },
+          {
+            type: "text",
+            question: "Translate to English: Se eu praticar, eu vou aprender mais.",
+            answer: "if i practice, i will learn more"
+          }
+        ]
+      }
+    }
+  ],
+  test: [
+    {
+      type: "choice",
+      question: "Choose the correct present perfect sentence:",
+      options: ["I have studied English", "I has studied English", "I have study English"],
+      answer: "I have studied English"
+    },
+    {
+      type: "choice",
+      question: "Choose the correct first conditional sentence:",
+      options: ["If I study, I will pass", "If I will study, I pass", "If I studied, I will pass"],
+      answer: "If I study, I will pass"
+    },
+    {
+      type: "choice",
+      question: "Choose the correct sentence with too:",
+      options: ["The test is too difficult", "The test is enough difficult", "The test too difficult is"],
+      answer: "The test is too difficult"
+    },
+    {
+      type: "text",
+      question: "Translate: Eu vou melhorar minha fala.",
+      answer: "i am going to improve my speaking"
+    },
+    {
+      type: "text",
+      question: "Translate: Se eu praticar, eu vou aprender mais.",
+      answer: "if i practice, i will learn more"
+    },
+    {
+      type: "matching",
+      question: "Final vocabulary review:",
+      pairs: [
+        { left: "future", right: "futuro" },
+        { left: "confidence", right: "confiança" },
+        { left: "opportunity", right: "oportunidade" },
+        { left: "solution", right: "solução" }
+      ]
+    }
+  ]
+}
+];
+
+
 let currentLesson = 0;
 let currentModule = 0;
 let isTestMode = false;
+let currentBookKey = "bookOne";
+let currentBookTitle = "Book One";
+let currentUser = JSON.parse(localStorage.getItem("fydCurrentUser")) || null;
 
-let progress = JSON.parse(localStorage.getItem("fydProgress")) || {
+let progress = {
   completedModules: {},
   completedLessons: {}
 };
 
-function openBookOne() {
+function getUsers() {
+  return JSON.parse(localStorage.getItem("fydUsers")) || [];
+}
+
+function saveUsers(users) {
+  localStorage.setItem("fydUsers", JSON.stringify(users));
+}
+
+function normalizeEmail(email) {
+  return String(email).trim().toLowerCase();
+}
+
+function getProgressKey() {
+  if (!currentUser || !currentUser.email) return "fydProgress_guest";
+  return "fydProgress_" + currentBookKey + "_" + normalizeEmail(currentUser.email);
+}
+
+function loadProgress() {
+  progress = JSON.parse(localStorage.getItem(getProgressKey())) || {
+    completedModules: {},
+    completedLessons: {}
+  };
+}
+
+function showLoginTab() {
+  document.getElementById("loginForm").classList.remove("hidden");
+  document.getElementById("registerForm").classList.add("hidden");
+  document.getElementById("loginTabBtn").classList.add("active");
+  document.getElementById("registerTabBtn").classList.remove("active");
+  setLoginMessage("");
+}
+
+function showRegisterTab() {
+  document.getElementById("registerForm").classList.remove("hidden");
+  document.getElementById("loginForm").classList.add("hidden");
+  document.getElementById("registerTabBtn").classList.add("active");
+  document.getElementById("loginTabBtn").classList.remove("active");
+  setLoginMessage("");
+}
+
+function setLoginMessage(message, type = "") {
+  const element = document.getElementById("loginMessage");
+  element.textContent = message;
+  element.className = "login-message";
+  if (type) element.classList.add(type);
+}
+
+function registerUser() {
+  const name = document.getElementById("registerName").value.trim();
+  const email = normalizeEmail(document.getElementById("registerEmail").value);
+  const password = document.getElementById("registerPassword").value.trim();
+
+  if (!name || !email || !password) {
+    setLoginMessage("Preencha nome, e-mail e senha para criar a conta.", "error");
+    return;
+  }
+
+  if (password.length < 4) {
+    setLoginMessage("Crie uma senha com pelo menos 4 caracteres.", "error");
+    return;
+  }
+
+  const users = getUsers();
+  const userExists = users.some(user => normalizeEmail(user.email) === email);
+
+  if (userExists) {
+    setLoginMessage("Este e-mail já possui cadastro. Use a aba Entrar.", "error");
+    return;
+  }
+
+  const newUser = {
+    name: name,
+    email: email,
+    password: password,
+    createdAt: new Date().toISOString()
+  };
+
+  users.push(newUser);
+  saveUsers(users);
+
+  currentUser = { name: newUser.name, email: newUser.email };
+  localStorage.setItem("fydCurrentUser", JSON.stringify(currentUser));
+  loadProgress();
+  openHomeAfterLogin();
+}
+
+function loginUser() {
+  const email = normalizeEmail(document.getElementById("loginEmail").value);
+  const password = document.getElementById("loginPassword").value.trim();
+
+  if (!email || !password) {
+    setLoginMessage("Digite e-mail e senha para entrar.", "error");
+    return;
+  }
+
+  const users = getUsers();
+  const user = users.find(item => normalizeEmail(item.email) === email && item.password === password);
+
+  if (!user) {
+    setLoginMessage("E-mail ou senha incorretos. Verifique os dados ou crie uma conta.", "error");
+    return;
+  }
+
+  currentUser = { name: user.name, email: user.email };
+  localStorage.setItem("fydCurrentUser", JSON.stringify(currentUser));
+  loadProgress();
+  openHomeAfterLogin();
+}
+
+function openHomeAfterLogin() {
+  document.getElementById("loginScreen").classList.add("hidden");
+  document.getElementById("appScreen").classList.add("hidden");
+  document.getElementById("homeScreen").classList.remove("hidden");
+  updateHeaderUser();
+}
+
+function updateHeaderUser() {
+  const badge = document.getElementById("studentBadge");
+  const logoutBtn = document.getElementById("logoutBtn");
+
+  if (currentUser) {
+    badge.textContent = "👤 " + currentUser.name;
+    badge.classList.remove("hidden");
+    logoutBtn.classList.remove("hidden");
+  } else {
+    badge.textContent = "";
+    badge.classList.add("hidden");
+    logoutBtn.classList.add("hidden");
+  }
+}
+
+function logoutUser() {
+  currentUser = null;
+  localStorage.removeItem("fydCurrentUser");
+
+  document.getElementById("appScreen").classList.add("hidden");
+  document.getElementById("homeScreen").classList.add("hidden");
+  document.getElementById("loginScreen").classList.remove("hidden");
+
+  document.getElementById("loginEmail").value = "";
+  document.getElementById("loginPassword").value = "";
+  showLoginTab();
+  updateHeaderUser();
+}
+
+function initializeLogin() {
+  if (currentUser) {
+    loadProgress();
+    openHomeAfterLogin();
+  } else {
+    document.getElementById("loginScreen").classList.remove("hidden");
+    document.getElementById("homeScreen").classList.add("hidden");
+    document.getElementById("appScreen").classList.add("hidden");
+    updateHeaderUser();
+  }
+}
+
+function setActiveBook(bookKey, bookTitle, lessonData) {
+  currentBookKey = bookKey;
+  currentBookTitle = bookTitle;
+
+  lessons.splice(0, lessons.length, ...lessonData);
+  loadProgress();
+
   document.getElementById("homeScreen").classList.add("hidden");
   document.getElementById("appScreen").classList.remove("hidden");
+  const sidebarBookTitle = document.getElementById("sidebarBookTitle");
+  if (sidebarBookTitle) sidebarBookTitle.textContent = bookTitle;
 
   currentLesson = 0;
   currentModule = 0;
@@ -1990,13 +5058,31 @@ function openBookOne() {
   render();
 }
 
+function openBookOne() {
+  if (!currentUser) {
+    alert("Faça login para acessar a apostila.");
+    return;
+  }
+
+  setActiveBook("bookOne", "Book One", bookOneLessons);
+}
+
+function openBookTwo() {
+  if (!currentUser) {
+    alert("Faça login para acessar a apostila.");
+    return;
+  }
+
+  setActiveBook("bookTwo", "Book Two", bookTwoLessons);
+}
+
 function goHome() {
   document.getElementById("appScreen").classList.add("hidden");
   document.getElementById("homeScreen").classList.remove("hidden");
 }
 
 function saveProgress() {
-  localStorage.setItem("fydProgress", JSON.stringify(progress));
+  localStorage.setItem(getProgressKey(), JSON.stringify(progress));
 }
 
 function moduleKey(lessonIndex, moduleIndex) {
@@ -2526,9 +5612,9 @@ function showFinalCongratulations() {
 
   document.getElementById("moduleContent").innerHTML = `
     <div class="card">
-      <h2>You completed Book One!</h2>
+      <h2>You completed ${currentBookTitle}!</h2>
       <p>
-        Amazing job! You finished all lessons from the Follow Your Dreams Interactive Workbook — Book One.
+        Amazing job! You finished all lessons from the Follow Your Dreams Interactive Workbook — ${currentBookTitle}.
       </p>
       <p>
         You unlocked your Certificate of Completion. 🏆
@@ -2537,8 +5623,8 @@ function showFinalCongratulations() {
 
     <div class="card certificate-card">
       <h2>Certificate of Completion</h2>
-      <p><strong>Student:</strong> __________________________</p>
-      <p><strong>Course:</strong> English Interactive Workbook — Book One</p>
+      <p><strong>Student:</strong> ${currentUser ? currentUser.name : "__________________________"}</p>
+      <p><strong>Course:</strong> English Interactive Workbook — ${currentBookTitle}</p>
       <p><strong>School:</strong> Follow Your Dreams</p>
       <p><strong>Date:</strong> ____ / ____ / ______</p>
 
@@ -2634,3 +5720,4 @@ function render() {
 }
 
 setupButtons();
+initializeLogin();

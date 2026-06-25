@@ -10,18 +10,65 @@
 
   <header>
     <div class="brand">
-      <div class="logo"><img src="logofyd.png" alt=""></div>
+      <div class="logo">FYD</div>
       <div>
         <h1>Follow Your Dreams</h1>
         <p>Interactive Workbook</p>
       </div>
     </div>
 
-    <span class="header-badge">📖 English Course</span>
+    <div class="header-actions">
+      <span class="header-badge">📖 English Course</span>
+      <span id="studentBadge" class="student-badge hidden"></span>
+      <button id="logoutBtn" class="logout-btn hidden" onclick="logoutUser()">Sair</button>
+    </div>
   </header>
 
+  <!-- TELA DE LOGIN -->
+  <section id="loginScreen" class="login-screen">
+    <div class="login-card">
+      <div class="login-logo">📖</div>
+      <h1>Student Login</h1>
+      <p>Acesse sua apostila digital e salve seu progresso individualmente.</p>
+
+      <div class="login-tabs">
+        <button id="loginTabBtn" class="login-tab active" onclick="showLoginTab()">Entrar</button>
+        <button id="registerTabBtn" class="login-tab" onclick="showRegisterTab()">Cadastrar</button>
+      </div>
+
+      <div id="loginForm" class="login-form">
+        <label for="loginEmail">E-mail</label>
+        <input type="email" id="loginEmail" placeholder="Digite seu e-mail" autocomplete="email" />
+
+        <label for="loginPassword">Senha</label>
+        <input type="password" id="loginPassword" placeholder="Digite sua senha" autocomplete="current-password" />
+
+        <button class="primary-login-btn" onclick="loginUser()">Entrar na apostila</button>
+      </div>
+
+      <div id="registerForm" class="login-form hidden">
+        <label for="registerName">Nome do aluno</label>
+        <input type="text" id="registerName" placeholder="Digite seu nome" autocomplete="name" />
+
+        <label for="registerEmail">E-mail</label>
+        <input type="email" id="registerEmail" placeholder="Digite seu e-mail" autocomplete="email" />
+
+        <label for="registerPassword">Senha</label>
+        <input type="password" id="registerPassword" placeholder="Crie uma senha" autocomplete="new-password" />
+
+        <button class="primary-login-btn" onclick="registerUser()">Criar conta</button>
+      </div>
+
+      <p id="loginMessage" class="login-message"></p>
+
+      <div class="login-note">
+        <strong>Observação:</strong> este login salva o progresso neste mesmo navegador/dispositivo.
+      </div>
+    </div>
+  </section>
+
   <!-- TELA INICIAL / ESCOLHA DO BOOK -->
-  <section id="homeScreen" class="home-screen">
+  <section id="homeScreen" class="home-screen hidden">
     <div class="home-content">
       <h1>Welcome to your Interactive Workbook</h1>
       <p>Choose your book and start learning English in a fun and interactive way.</p>
@@ -35,11 +82,12 @@
           <button>Start Book One</button>
         </div>
 
-        <div class="book-card locked">
+        <div class="book-card available" onclick="openBookTwo()">
           <span class="book-icon">📗</span>
           <h2>Book Two</h2>
-          <p>Coming Soon</p>
-          <strong>Locked</strong>
+          <p>Elementary Level</p>
+          <strong>Available</strong>
+          <button>Start Book Two</button>
         </div>
 
         <div class="book-card locked">
@@ -58,7 +106,7 @@
     <aside class="sidebar">
       <button class="back-home-btn" onclick="goHome()">← Back to Books</button>
 
-      <h2>Book One</h2>
+      <h2 id="sidebarBookTitle">Book One</h2>
       <p id="lessonsCount"></p>
       <div id="lessonList"></div>
     </aside>
