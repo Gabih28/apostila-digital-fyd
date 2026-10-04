@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apostila Digital FYD | Book Three</title>
+
+  <style>
+    :root{
+      --bg:#07111f;
+      --card:#101827;
+      --card2:#162235;
+      --line:rgba(255,255,255,0.12);
+      --text:#ffffff;
+      --muted:#cbd5e1;
+      --primary:#38bdf8;
+      --primary2:#6366f1;
+      --green:#16a34a;
+      --red:#991b1b;
+      --yellow:#facc15;
+    }
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      min-height:100vh;
+      background:
+        radial-gradient(circle at 18% 8%, rgba(56,189,248,0.18), transparent 28%),
+        radial-gradient(circle at 88% 18%, rgba(99,102,241,0.18), transparent 30%),
+        var(--bg);
+      color:var(--text);
+      padding:24px;
+    }
+
+    main{
+      max-width:1220px;
+      margin:0 auto;
+    }
+
+    .top{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:14px;
+      flex-wrap:wrap;
+      margin-bottom:24px;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:14px;
+    }
+
+    .brand img{
+      width:56px;
+      height:56px;
+      object-fit:contain;
+      background:white;
+      border-radius:18px;
+      padding:8px;
+    }
+
+    .brand h1{
+      font-size:25px;
+      line-height:1;
+    }
+
+    .brand p{
+      color:var(--muted);
+      margin-top:5px;
+      font-size:14px;
+    }
+
+    .back-link{
+      padding:11px 15px;
+      border-radius:999px;
+      color:white;
+      text-decoration:none;
+      background:rgba(255,255,255,0.08);
+      border:1px solid var(--line);
+      font-weight:900;
+      font-size:13px;
+    }
+
+    .hero{
+      min-height:420px;
+      border:1px solid var(--line);
+      border-radius:30px;
+      padding:34px;
+      margin-bottom:28px;
+      position:relative;
+      overflow:hidden;
+      background:
+        linear-gradient(to top, rgba(0,0,0,.82), rgba(0,0,0,.22)),
+        radial-gradient(circle at 18% 18%, rgba(56,189,248,.46), transparent 30%),
+        radial-gradient(circle at 82% 18%, rgba(99,102,241,.44), transparent 28%),
+        linear-gradient(135deg, #082f49, #111827, #312e81);
+    }
+
+    .hero::after{
+      content:"";
+      position:absolute;
+      inset:-50px;
+      background:
+        repeating-linear-gradient(25deg, rgba(255,255,255,.08) 0 1px, transparent 1px 34px),
+        repeating-linear-gradient(155deg, rgba(255,255,255,.06) 0 1px, transparent 1px 34px);
+      opacity:.20;
+      pointer-events:none;
+    }
+
+    .hero-content{
+      position:relative;
+      z-index:2;
+      display:grid;
+      grid-template-columns:1.15fr .85fr;
+      gap:28px;
+      align-items:center;
+    }
+
+    .badge{
+      display:inline-flex;
+      width:max-content;
+      padding:9px 13px;
+      border-radius:999px;
+      background:linear-gradient(135deg,var(--primary),var(--primary2));
+      color:white;
+      font-size:12px;
+      font-weight:900;
+      letter-spacing:.4px;
+      margin-bottom:16px;
+    }
+
+    .hero h2{
+      font-size:58px;
+      line-height:.95;
+      letter-spacing:-2px;
+      margin-bottom:16px;
+    }
+
+    .hero p{
+      font-size:20px;
+      color:#e5e7eb;
+      line-height:1.55;
+      max-width:720px;
+    }
+
+    .hero-panel{
+      background:rgba(255,255,255,0.08);
+      border:1px solid rgba(255,255,255,0.12);
+      border-radius:26px;
+      padding:24px;
+    }
+
+    .hero-panel h3{
+      font-size:25px;
+      margin-bottom:14px;
+    }
+
+    .hero-panel ul{
+      padding-left:20px;
+    }
+
+    .hero-panel li{
+      color:#e5e7eb;
+      font-size:17px;
+      line-height:1.6;
+    }
+
+    .section-title{
+      margin:28px 0 16px;
+    }
+
+    .section-title h2{
+      font-size:32px;
+      margin-bottom:6px;
+    }
+
+    .section-title p{
+      color:var(--muted);
+      font-size:17px;
+    }
+
+    .lesson-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fill,minmax(245px,1fr));
+      gap:18px;
+    }
+
+    .lesson-card{
+      min-height:330px;
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:20px;
+      background:
+        linear-gradient(to top, rgba(0,0,0,.72), rgba(0,0,0,.18)),
+        radial-gradient(circle at 20% 15%, rgba(56,189,248,.26), transparent 28%),
+        radial-gradient(circle at 80% 18%, rgba(99,102,241,.24), transparent 26%),
+        var(--card);
+      cursor:pointer;
+      transition:.25s;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      overflow:hidden;
+      position:relative;
+    }
+
+    .lesson-card:hover{
+      transform:translateY(-6px);
+      border-color:var(--primary);
+      box-shadow:0 18px 38px rgba(56,189,248,.16);
+    }
+
+    .lesson-number{
+      display:inline-flex;
+      width:max-content;
+      padding:7px 11px;
+      border-radius:999px;
+      background:linear-gradient(135deg,var(--primary),var(--primary2));
+      font-size:12px;
+      font-weight:900;
+      margin-bottom:12px;
+    }
+
+    .lesson-card h3{
+      font-size:24px;
+      line-height:1;
+      margin-bottom:10px;
+    }
+
+    .lesson-card p{
+      color:#e2e8f0;
+      font-size:15px;
+      line-height:1.45;
+    }
+
+    .mini-tags{
+      display:flex;
+      flex-wrap:wrap;
+      gap:7px;
+      margin-top:16px;
+    }
+
+    .mini-tags span{
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.08);
+      font-size:11px;
+      font-weight:900;
+    }
+
+    .player{
+      display:none;
+    }
+
+    .player.active{
+      display:block;
+    }
+
+    .slide{
+      display:none;
+      min-height:690px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.025), rgba(0,0,0,.06)),
+        var(--card);
+      border:1px solid var(--line);
+      border-radius:28px;
+      padding:42px;
+      box-shadow:0 20px 50px rgba(0,0,0,.35);
+    }
+
+    .slide.active{
+      display:block;
+    }
+
+    .kicker{
+      display:inline-block;
+      margin-bottom:14px;
+      padding:8px 12px;
+      border-radius:999px;
+      background:rgba(56,189,248,.10);
+      border:1px solid rgba(56,189,248,.25);
+      color:#dff7ff;
+      font-size:12px;
+      font-weight:900;
+      text-transform:uppercase;
+      letter-spacing:.4px;
+    }
+
+    h1{
+      font-size:56px;
+      line-height:.95;
+      letter-spacing:-2px;
+      margin-bottom:18px;
+    }
+
+    h2{
+      font-size:38px;
+      line-height:1;
+      letter-spacing:-1px;
+      margin-bottom:18px;
+    }
+
+    h3{
+      font-size:24px;
+      margin-bottom:14px;
+    }
+
+    p,
+    li{
+      color:var(--muted);
+      font-size:20px;
+      line-height:1.55;
+    }
+
+    ul{
+      padding-left:22px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:18px;
+      margin-top:24px;
+    }
+
+    .card,
+    .box{
+      background:var(--card2);
+      border:1px solid var(--line);
+      border-radius:20px;
+      padding:20px;
+    }
+
+    button{
+      border:0;
+      border-radius:14px;
+      padding:13px 16px;
+      font-weight:900;
+      color:white;
+      background:linear-gradient(135deg,var(--primary),var(--primary2));
+      cursor:pointer;
+      margin:6px 6px 6px 0;
+    }
+
+    .secondary{
+      background:#1f1f1f;
+      border:1px solid var(--line);
+    }
+
+    .option,
+    .word,
+    .meaning{
+      display:block;
+      width:100%;
+      text-align:left;
+      background:#1f2937;
+      border:1px solid rgba(255,255,255,0.14);
+      border-radius:14px;
+      padding:14px 16px;
+      color:white;
+      font-size:17px;
+      font-weight:800;
+      margin:10px 0;
+      cursor:pointer;
+    }
+
+    .correct{
+      background:var(--green)!important;
+    }
+
+    .wrong{
+      background:var(--red)!important;
+    }
+
+    .generated{
+      margin-top:18px;
+      color:#fff;
+      font-size:21px;
+      font-weight:900;
+    }
+
+    .feedback{
+      margin-top:14px;
+      color:#fff;
+      font-weight:900;
+    }
+
+    .reflection-area{
+      width:100%;
+      min-height:130px;
+      margin-top:14px;
+      border-radius:18px;
+      border:1px solid rgba(255,255,255,0.14);
+      background:#0f172a;
+      color:#fff;
+      padding:16px;
+      font-size:18px;
+      resize:vertical;
+    }
+
+    .mini-score{
+      margin-top:16px;
+      padding:14px 16px;
+      border-radius:16px;
+      background:rgba(34,197,94,.08);
+      border:1px solid rgba(34,197,94,.18);
+      color:#fff;
+      font-size:18px;
+      font-weight:900;
+    }
+
+    .scene-box{
+      margin-top:22px;
+      padding:24px;
+      min-height:260px;
+      border-radius:24px;
+      border:1px solid rgba(255,255,255,.08);
+      background:
+        linear-gradient(to top, rgba(0,0,0,.86), rgba(0,0,0,.30)),
+        radial-gradient(circle at 20% 20%, rgba(56,189,248,.28), transparent 30%),
+        radial-gradient(circle at 80% 20%, rgba(99,102,241,.24), transparent 28%),
+        #111827;
+      display:flex;
+      flex-direction:column;
+      justify-content:flex-end;
+    }
+
+    .scene-box strong{
+      color:#fff;
+      font-size:28px;
+      display:block;
+      margin-bottom:10px;
+    }
+
+    .final-message{
+      margin-top:28px;
+      padding:24px;
+      border-radius:24px;
+      background:
+        linear-gradient(135deg, rgba(56,189,248,.14), rgba(99,102,241,.10)),
+        rgba(255,255,255,.03);
+      border:1px solid rgba(255,255,255,.08);
+      text-align:center;
+    }
+
+    .final-message strong{
+      display:block;
+      color:#fff;
+      font-size:34px;
+      line-height:1.1;
+    }
+
+    .controls{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:14px;
+      margin-top:18px;
+      padding:0 8px;
+      flex-wrap:wrap;
+    }
+
+    .counter{
+      color:#ccc;
+      font-weight:900;
+    }
+
+    .hidden{
+      display:none!important;
+    }
+
+    @media(max-width:850px){
+      body{
+        padding:14px;
+      }
+
+      .hero-content,
+      .grid{
+        grid-template-columns:1fr;
+      }
+
+      .slide{
+        padding:26px;
+        min-height:auto;
+      }
+
+      .hero h2,
+      h1{
+        font-size:40px;
+      }
+
+      h2{
+        font-size:30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<main>
+  <div class="top">
+    <div class="brand">
+      <img src="assets/logo-follow.png" alt="Follow Your Dreams" onerror="this.style.display='none'">
+      <div>
+        <h1>Apostila Digital FYD</h1>
+        <p>Book Three • Interactive Workbook</p>
+      </div>
+    </div>
+
+    <a class="back-link" href="index.html">← Voltar para a apostila</a>
+  </div>
+
+  <section id="hub">
+    <div class="hero">
+      <div class="hero-content">
+        <div>
+          <span class="badge">Book Three • Complete Track</span>
+          <h2>Book Three<br>Interactive Lessons</h2>
+          <p>
+            Trilha completa com 20 lessons + review final, organizada com grammar,
+            vocabulary, idiomatic expressions, quiz, matching, phrase builder, speaking e writing.
+          </p>
+
+          <button onclick="openLesson(1)">Começar Lesson One</button>
+        </div>
+
+        <div class="hero-panel">
+          <h3>Included</h3>
+          <ul>
+            <li>20 interactive lessons;</li>
+            <li>1 complete review;</li>
+            <li>audio buttons;</li>
+            <li>quiz and matching;</li>
+            <li>writing practice;</li>
+            <li>speaking challenge.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-title">
+      <h2>Book Three Lessons</h2>
+      <p>Escolha uma lição para estudar.</p>
+    </div>
+
+    <div class="lesson-grid" id="lessonGrid"></div>
+  </section>
+
+  <section id="player" class="player">
+    <div id="slidesContainer"></div>
+
+    <div class="controls">
+      <div>
+        <button class="secondary" onclick="backToHub()">← Ver todas as lições</button>
+        <button class="secondary" onclick="prevSlide()">← Anterior</button>
+        <button onclick="nextSlide()">Próximo →</button>
+      </div>
+
+      <span class="counter" id="counter">1 / 10</span>
+    </div>
+  </section>
+</main>
+
+<script>
+const bookThreeLessons = [
+  {
+    id:1,
+    title:"Lesson One",
+    theme:"Past actions, stories and descriptions",
+    grammar:["say / said", "leave / left", "find / found", "rain / rained", "meaningful things"],
+    vocab:["typist", "secretary", "eyes", "smile", "college", "town"],
+    idioms:["that's all right", "in town", "to get up"],
+    scene:"A character tells a short story about something that happened yesterday.",
+    quizQuestion:"Which verb is in the past?",
+    quizOptions:["find", "found", "finding"],
+    answer:1,
+    builder:"I found something interesting yesterday, and I want to tell you about it."
+  },
+  {
+    id:2,
+    title:"Lesson Two",
+    theme:"Money, choices and small problems",
+    grammar:["need to", "thought of", "wanted to", "there is / there are"],
+    vocab:["binoculars", "dilemma", "newspaper", "money", "people"],
+    idioms:["to wake up", "it looks like", "part time"],
+    scene:"Paul needs money and thinks about selling something, but he changes his plan.",
+    quizQuestion:"A dilemma is...",
+    quizOptions:["a kind of food", "a difficult situation", "a place"],
+    answer:1,
+    builder:"I need to make a decision because I have a small problem."
+  },
+  {
+    id:3,
+    title:"Lesson Three",
+    theme:"Preferences, family and daily needs",
+    grammar:["look after", "there is / there are", "too much / too many", "love to"],
+    vocab:["expensive", "cheap", "salt", "angry", "grandmother", "grandchildren"],
+    idioms:["what else", "the day after tomorrow", "I'm hungry", "I'm thirsty"],
+    scene:"A person talks about family, food, plans and things they like or don't like.",
+    quizQuestion:"Choose the correct meaning for 'look after'.",
+    quizOptions:["to care for someone", "to buy something", "to travel"],
+    answer:0,
+    builder:"I have to look after my little brother because my parents are busy."
+  },
+  {
+    id:4,
+    title:"Lesson Four",
+    theme:"Family, mistakes and feelings",
+    grammar:["understand", "heard", "most of the time", "already know"],
+    vocab:["family", "party", "mistake", "angry", "hug", "young man"],
+    idioms:["so far", "besides", "ago", "twice"],
+    scene:"Someone makes a big mistake at a party and has to explain what happened.",
+    quizQuestion:"If someone is angry, they feel...",
+    quizOptions:["happy", "mad", "sleepy"],
+    answer:1,
+    builder:"I made a mistake, but I tried to explain everything clearly."
+  },
+  {
+    id:5,
+    title:"Lesson Five",
+    theme:"Accidents, feelings and places",
+    grammar:["there was / there were", "feel like", "grow up", "fall off"],
+    vocab:["calendar", "bus stop", "accident", "garden", "ladder", "mirror"],
+    idioms:["on purpose", "run away", "as a matter of fact", "take off"],
+    scene:"A character talks about an accident and explains how they felt.",
+    quizQuestion:"The opposite of 'on purpose' is closest to...",
+    quizOptions:["by accident", "very fast", "at home"],
+    answer:0,
+    builder:"I didn't do it on purpose. It was an accident."
+  },
+  {
+    id:6,
+    title:"Lesson Six",
+    theme:"Ghost stories, fear and beliefs",
+    grammar:["remember", "don't you think", "how long", "if you don't mind"],
+    vocab:["ghost", "voice", "bathroom", "scared", "tree", "apartment"],
+    idioms:["how about", "you're welcome", "for all I know", "most of the time"],
+    scene:"Two people hear a strange sound and wonder if ghosts are real.",
+    quizQuestion:"A ghost story is usually...",
+    quizOptions:["funny only", "mysterious or scary", "about cooking"],
+    answer:1,
+    builder:"I don't know if ghosts are real, but that story was scary."
+  },
+  {
+    id:7,
+    title:"Lesson Seven",
+    theme:"Problems, decisions and getting ready",
+    grammar:["get", "depend on", "decide", "hurt", "buy / rent / stay"],
+    vocab:["foot", "head", "nose", "arm", "German", "building"],
+    idioms:["get away", "get ready", "get into", "get out of", "get off"],
+    scene:"A group has to get ready quickly and solve a problem before leaving.",
+    quizQuestion:"'Get ready' means...",
+    quizOptions:["prepare yourself", "sleep", "buy something"],
+    answer:0,
+    builder:"We have to get ready because we need to leave soon."
+  },
+  {
+    id:8,
+    title:"Lesson Eight",
+    theme:"A difficult day at work",
+    grammar:["hurt", "many doubts", "able to", "depend on"],
+    vocab:["factory", "office", "telephone", "voice", "manager", "problem"],
+    idioms:["how much", "I think so", "how long", "just a minute", "at least"],
+    scene:"Bill has a difficult day at work and needs to solve many problems.",
+    quizQuestion:"If a day is difficult, it is...",
+    quizOptions:["easy", "complicated", "empty"],
+    answer:1,
+    builder:"I had a difficult day because many things happened at work."
+  },
+  {
+    id:9,
+    title:"Lesson Nine",
+    theme:"Clothes, objects and daily situations",
+    grammar:["wear / wore / worn", "carry / carried", "open / opened", "happen / happened"],
+    vocab:["bag", "purse", "wallet", "towel", "quantity", "open"],
+    idioms:["to come in", "everybody knows", "to take care of"],
+    scene:"Someone talks about clothes, objects and something that happened yesterday.",
+    quizQuestion:"Which one is something you can wear?",
+    quizOptions:["a sweater", "a question", "a garage"],
+    answer:0,
+    builder:"I wore my new sweater because it was cold."
+  },
+  {
+    id:10,
+    title:"Lesson Ten",
+    theme:"Dreams, worries and travel",
+    grammar:["turn off", "ever", "already", "grow up", "look at"],
+    vocab:["dream", "nightmare", "tired", "sweater", "parents", "visitor"],
+    idioms:["to be about to", "as a matter of fact", "as well as", "what else", "a little"],
+    scene:"A person has a bad dream and talks about worries, family and travel.",
+    quizQuestion:"A nightmare is...",
+    quizOptions:["a bad dream", "a good meal", "a quiet place"],
+    answer:0,
+    builder:"I had a bad dream, but as a matter of fact, it helped me think."
+  },
+  {
+    id:11,
+    title:"Lesson Eleven",
+    theme:"Plans, promises and beliefs",
+    grammar:["intend to", "promise to", "believe", "know", "whose"],
+    vocab:["hospital", "hotel", "married", "ghost", "hill", "avenue"],
+    idioms:["instead of", "go on", "have to", "go down"],
+    scene:"Someone makes a promise and talks about what they intend to do.",
+    quizQuestion:"'I intend to travel' means...",
+    quizOptions:["I plan to travel", "I hate traveling", "I forgot to travel"],
+    answer:0,
+    builder:"I promise to study more because I want to improve my English."
+  },
+  {
+    id:12,
+    title:"Lesson Twelve",
+    theme:"Confusion, hopes and public places",
+    grammar:["want to ask", "intend to", "don't believe", "hope"],
+    vocab:["traffic light", "railway station", "bus stop", "passenger", "hope"],
+    idioms:["come on", "it doesn't matter", "up to date", "take a nap", "go out"],
+    scene:"A person in a bus misunderstands another passenger and feels embarrassed.",
+    quizQuestion:"If something doesn't matter, it is...",
+    quizOptions:["not important", "very expensive", "dangerous"],
+    answer:0,
+    builder:"It doesn't matter if I make a mistake. I can try again."
+  },
+  {
+    id:13,
+    title:"Lesson Thirteen",
+    theme:"Changing plans and making decisions",
+    grammar:["break / broke / broken", "change / changed", "make / made", "do / did", "so do I"],
+    vocab:["hat", "coat", "robe", "slippers", "iron", "wood", "typewriter"],
+    idioms:["to make up one's mind", "to change one's mind", "to take a break"],
+    scene:"A person changes plans and needs to make up their mind quickly.",
+    quizQuestion:"'To change your mind' means...",
+    quizOptions:["to sleep", "to decide differently", "to wear a hat"],
+    answer:1,
+    builder:"I changed my mind because I had a better idea."
+  },
+  {
+    id:14,
+    title:"Lesson Fourteen",
+    theme:"Short stories and quick decisions",
+    grammar:["break", "tell", "answer", "change", "explain"],
+    vocab:["alarm", "break", "matter", "mine", "yours", "tree"],
+    idioms:["that's all right", "what else", "on purpose", "if you don't mind", "it looks like"],
+    scene:"Three short stories show mistakes, surprises and funny decisions.",
+    quizQuestion:"'If you don't mind' is used to...",
+    quizOptions:["ask politely", "shout angrily", "refuse everything"],
+    answer:0,
+    builder:"If you don't mind, I would like to ask one more question."
+  },
+  {
+    id:15,
+    title:"Lesson Fifteen",
+    theme:"Programs, invitations and promises",
+    grammar:["sit / sat", "wake / woke", "enjoy + ing", "teach / taught", "neither do I"],
+    vocab:["invitation", "almost", "program", "curtain", "garage", "information"],
+    idioms:["turn around", "none of your business", "try on", "make a promise"],
+    scene:"Friends talk about programs, invitations, clothes and promises.",
+    quizQuestion:"'Try on' is used with...",
+    quizOptions:["clothes", "homework", "rain"],
+    answer:0,
+    builder:"I want to try on this jacket before buying it."
+  },
+  {
+    id:16,
+    title:"Lesson Sixteen",
+    theme:"Private conversations and social behavior",
+    grammar:["sit down", "read", "go on a trip", "private / public", "difference between"],
+    vocab:["theater", "play", "couple", "noise", "conversation", "business"],
+    idioms:["a lot", "once a week", "nice to meet you", "how many"],
+    scene:"A person goes to the theater and gets annoyed by a private conversation.",
+    quizQuestion:"A private conversation is...",
+    quizOptions:["for everyone", "between specific people", "a public speech"],
+    answer:1,
+    builder:"This is a private conversation, so please speak quietly."
+  },
+  {
+    id:17,
+    title:"Lesson Seventeen",
+    theme:"Health, habits and instructions",
+    grammar:["cut / cut", "answer", "stop + ing", "learn how to", "used to"],
+    vocab:["drugstore", "medicine", "patient", "pharmacy", "hospital", "useful"],
+    idioms:["what are you looking for?", "take medicine", "pay attention", "used to"],
+    scene:"A person needs medicine and receives instructions about what to do.",
+    quizQuestion:"'Pay attention' means...",
+    quizOptions:["listen and focus", "run fast", "buy medicine"],
+    answer:0,
+    builder:"Pay attention to the instructions before you take the medicine."
+  },
+  {
+    id:18,
+    title:"Lesson Eighteen",
+    theme:"Habits, routines and personal experiences",
+    grammar:["used to", "usually", "sometimes", "too much / too many", "far from"],
+    vocab:["routine", "habit", "experience", "vacation", "school", "work"],
+    idioms:["far from", "on vacation", "how often", "as usual"],
+    scene:"A character compares old habits with current routines.",
+    quizQuestion:"'I used to swim' talks about...",
+    quizOptions:["a past habit", "a future plan", "a price"],
+    answer:0,
+    builder:"I used to wake up late, but now I wake up early."
+  },
+  {
+    id:19,
+    title:"Lesson Nineteen",
+    theme:"Reviewing decisions and consequences",
+    grammar:["decided to", "wanted to", "had to", "was able to", "because"],
+    vocab:["decision", "consequence", "problem", "solution", "choice", "reason"],
+    idioms:["make a decision", "for that reason", "in my opinion", "at the end"],
+    scene:"A person explains an important decision and its consequences.",
+    quizQuestion:"A consequence is...",
+    quizOptions:["what happens after something", "a color", "a place"],
+    answer:0,
+    builder:"I made a decision, and for that reason everything changed."
+  },
+  {
+    id:20,
+    title:"Lesson Twenty",
+    theme:"Final conversation practice",
+    grammar:["mixed past verbs", "questions", "opinions", "requests", "future plans"],
+    vocab:["conversation", "review", "topic", "answer", "question", "example"],
+    idioms:["let's talk about", "what do you think?", "in other words", "one more time"],
+    scene:"Two people review many topics and practice a complete conversation.",
+    quizQuestion:"A good conversation needs...",
+    quizOptions:["questions and answers", "only silence", "no ideas"],
+    answer:0,
+    builder:"Let's talk about this topic one more time."
+  },
+  {
+    id:21,
+    title:"Book Three Review",
+    theme:"Complete review challenge",
+    grammar:["past verbs", "questions", "opinions", "idioms", "conversation"],
+    vocab:["review", "challenge", "progress", "confidence", "fluency", "practice"],
+    idioms:["make up your mind", "take a break", "pay attention", "as a matter of fact"],
+    scene:"Final challenge: create a conversation using grammar, vocabulary and idioms from Book Three.",
+    quizQuestion:"The purpose of a review is...",
+    quizOptions:["to practice again", "to delete everything", "to stop learning"],
+    answer:0,
+    builder:"As a matter of fact, this review helped me speak with more confidence."
+  }
+];
+
+const lessonGrid = document.getElementById("lessonGrid");
+const hub = document.getElementById("hub");
+const player = document.getElementById("player");
+const slidesContainer = document.getElementById("slidesContainer");
+const counter = document.getElementById("counter");
+
+let currentLesson = null;
+let currentSlide = 0;
+let selectedWord = null;
+
+function renderLessonGrid(){
+  lessonGrid.innerHTML = "";
+
+  bookThreeLessons.forEach(lesson => {
+    const card = document.createElement("article");
+    card.className = "lesson-card";
+
+    card.innerHTML = `
+      <div>
+        <span class="lesson-number">${lesson.id <= 20 ? "Lesson " + lesson.id : "Review"}</span>
+        <h3>${lesson.title}</h3>
+        <p>${lesson.theme}</p>
+      </div>
+
+      <div class="mini-tags">
+        <span>Grammar</span>
+        <span>Vocabulary</span>
+        <span>Idioms</span>
+        <span>Speaking</span>
+      </div>
+    `;
+
+    card.onclick = () => openLesson(lesson.id);
+    lessonGrid.appendChild(card);
+  });
+}
+
+function openLesson(id){
+  currentLesson = bookThreeLessons.find(lesson => lesson.id === id);
+  currentSlide = 0;
+
+  if(!currentLesson){
+    alert("Lição não encontrada.");
+    return;
+  }
+
+  buildSlides(currentLesson);
+
+  hub.classList.add("hidden");
+  player.classList.add("active");
+
+  updateSlides();
+}
+
+function backToHub(){
+  player.classList.remove("active");
+  hub.classList.remove("hidden");
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function buildSlides(lesson){
+  slidesContainer.innerHTML = `
+    <section class="slide active">
+      <span class="kicker">Book Three • ${lesson.title}</span>
+      <h1>${lesson.title}</h1>
+      <p>${lesson.theme}</p>
+
+      <button onclick="activateAudio()">🔊 Ativar áudio</button>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Lesson Goals</h3>
+          <ul>
+            <li>practice grammar in context;</li>
+            <li>learn useful vocabulary;</li>
+            <li>use idiomatic expressions;</li>
+            <li>answer questions orally;</li>
+            <li>create a short conversation.</li>
+          </ul>
+        </div>
+
+        <div class="scene-box">
+          <strong>Digital Workbook Scene</strong>
+          <p>${lesson.scene}</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <span class="kicker">Grammar</span>
+      <h2>Grammar Focus</h2>
+
+      <div class="grid">
+        ${lesson.grammar.map(item => `
+          <div class="card">
+            <h3>${item}</h3>
+            <p>Create one sentence using: <strong>${item}</strong>.</p>
+            <button onclick="speakEnglish('${escapeForSpeech(item)}')">🔊 Listen</button>
+          </div>
+        `).join("")}
+      </div>
+    </section>
+
+    <section class="slide">
+      <span class="kicker">Vocabulary</span>
+      <h2>Listen and repeat</h2>
+
+      <div class="grid">
+        <div class="card">
+          ${lesson.vocab.slice(0,3).map(word => `
+            <button onclick="speakEnglish('${escapeForSpeech(word)}')">🔊 ${word}</button>
+          `).join("")}
+        </div>
+
+        <div class="card">
+          ${lesson.vocab.slice(3).map(word => `
+            <button onclick="speakEnglish('${escapeForSpeech(word)}')">🔊 ${word}</button>
+          `).join("")}
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <span class="kicker">Idiomatic Expressions</span>
+      <h2>Useful expressions</h2>
+
+      <div class="grid">
+        ${lesson.idioms.map(expression => `
+          <div class="card">
+            <h3>${expression}</h3>
+            <p>Use this expression in a short sentence.</p>
+            <button onclick="speakEnglish('${escapeForSpeech(expression)}')">🔊 Listen</button>
+          </div>
+        `).join("")}
+      </div>
+    </section>
+
+    <section class="slide">
+      <span class="kicker">Quiz</span>
+      <h2>Quick Check</h2>
+
+      <div class="box">
+        <p><strong>${lesson.quizQuestion}</strong></p>
+
+        ${lesson.quizOptions.map((option, index) => `
+          <button class="option" onclick="checkAnswer(this, ${index === lesson.answer}, 'quizFeedback')">
+            ${String.fromCharCode(65 + index)}) ${option}
+          </button>
+        `).join("")}
+
+        <p class="feedback" id="quizFeedback"></p>
+      </div>
+    </section>
+
+    <section class="slide">
+      <span class="kicker">Matching</span>
+      <h2>Match the words</h2>
+      <p>Clique em uma palavra e depois na combinação correta.</p>
+
+      <div class="grid">
+        <div class="card">
+          <button class="word" onclick="selectWord(this,'one')">${lesson.vocab[0]}</button>
+          <button class="word" onclick="selectWord(this,'two')">${lesson.vocab[1]}</button>
+          <button class="word" onclick="selectWord(this,'three')">${lesson.vocab[2]}</button>
+        </div>
+
+        <div class="card">
+          <button class="meaning" onclick="matchWord(this,'three','matchFeedback')">word 3 from this lesson</button>
+          <button class="meaning" onclick="matchWord(this,'one','matchFeedback')">word 1 from this lesson</button>
+          <button class="meaning" onclick="matchWord(this,'two','matchFeedback')">word 2 from this lesson</button>
+        </div>
+      </div>
+
+      <p class="feedback" id="matchFeedback"></p>
+    </section>
+
+    <section class="slide">
+      <span class="kicker">Phrase Builder</span>
+      <h2>Build a sentence</h2>
+
+      <div class="box">
+        <p>Click to generate a model sentence for this lesson.</p>
+
+        <button onclick="generateText('generatedPhrase','${escapeText(lesson.builder)}')">
+          Generate model sentence
+        </button>
+
+        <button onclick="speakEnglish('${escapeForSpeech(lesson.builder)}')">
+          🔊 Listen to model
+        </button>
+
+        <p class="generated" id="generatedPhrase"></p>
+      </div>
+    </section>
+
+    <section class="slide">
+      <span class="kicker">Speaking Practice</span>
+      <h2>Mini Conversation</h2>
+
+      <div class="box">
+        <p><strong>A:</strong> What is the main topic of this lesson?</p>
+        <p><strong>B:</strong> The main topic is ${lesson.theme.toLowerCase()}.</p>
+        <p><strong>A:</strong> Can you use one new expression?</p>
+        <p><strong>B:</strong> Yes. I can say: "${lesson.idioms[0]}".</p>
+        <p><strong>A:</strong> Can you make your own example?</p>
+        <p><strong>B:</strong> Yes, my example is __________.</p>
+      </div>
+    </section>
+
+    <section class="slide">
+      <span class="kicker">Writing</span>
+      <h2>Your paragraph</h2>
+
+      <div class="box">
+        <p>Write 4 to 6 lines about the lesson theme:</p>
+        <p><strong>${lesson.theme}</strong></p>
+
+        <textarea class="reflection-area" id="studentWriting" placeholder="Write your answer here..."></textarea>
+
+        <button onclick="countWords()">Count words</button>
+        <button onclick="showModel()">Show model</button>
+
+        <p class="mini-score" id="wordCount">Words: 0</p>
+        <p class="generated" id="modelAnswer"></p>
+      </div>
+    </section>
+
+    <section class="slide">
+      <span class="kicker">Final Task</span>
+      <h2>Your turn!</h2>
+
+      <div class="box">
+        <p>Create a short oral presentation using:</p>
+        <ul>
+          <li>2 vocabulary words;</li>
+          <li>1 grammar structure;</li>
+          <li>1 idiomatic expression;</li>
+          <li>1 personal opinion;</li>
+          <li>1 example from your life.</li>
+        </ul>
+      </div>
+
+      <div class="final-message">
+        <strong>That was all for today. See you in the next lesson!</strong>
+      </div>
+    </section>
+  `;
+}
+
+function updateSlides(){
+  const slides = document.querySelectorAll(".slide");
+
+  slides.forEach((slide, index) => {
+    slide.classList.toggle("active", index === currentSlide);
+  });
+
+  if(counter){
+    counter.textContent = `${currentSlide + 1} / ${slides.length}`;
+  }
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function nextSlide(){
+  const slides = document.querySelectorAll(".slide");
+
+  if(currentSlide < slides.length - 1){
+    currentSlide++;
+    updateSlides();
+  }
+}
+
+function prevSlide(){
+  if(currentSlide > 0){
+    currentSlide--;
+    updateSlides();
+  }
+}
+
+function checkAnswer(button, isCorrect, feedbackId){
+  const feedback = document.getElementById(feedbackId);
+
+  if(isCorrect){
+    button.classList.add("correct");
+    if(feedback) feedback.textContent = "Correct! Great job.";
+  } else {
+    button.classList.add("wrong");
+    if(feedback) feedback.textContent = "Almost. Try again.";
+  }
+}
+
+function generateText(targetId, text){
+  const target = document.getElementById(targetId);
+
+  if(target){
+    target.textContent = text;
+  }
+}
+
+function selectWord(button, word){
+  selectedWord = word;
+
+  document.querySelectorAll(".word").forEach(item => {
+    item.style.outline = "none";
+  });
+
+  button.style.outline = "3px solid #38bdf8";
+}
+
+function matchWord(button, word, feedbackId){
+  const feedback = document.getElementById(feedbackId);
+
+  if(!selectedWord){
+    if(feedback) feedback.textContent = "Choose a word first.";
+    return;
+  }
+
+  if(selectedWord === word){
+    button.classList.add("correct");
+    if(feedback) feedback.textContent = "Correct match!";
+  } else {
+    button.classList.add("wrong");
+    if(feedback) feedback.textContent = "Not yet. Try again.";
+  }
+
+  selectedWord = null;
+}
+
+function countWords(){
+  const text = document.getElementById("studentWriting").value.trim();
+  const words = text ? text.split(/\s+/).length : 0;
+  const count = document.getElementById("wordCount");
+
+  count.textContent = `Words: ${words}`;
+
+  if(words >= 55){
+    count.textContent += " — Excellent development!";
+  } else if(words >= 30){
+    count.textContent += " — Good. Try to add one more example.";
+  } else {
+    count.textContent += " — Try to write more.";
+  }
+}
+
+function showModel(){
+  const model = document.getElementById("modelAnswer");
+
+  if(!currentLesson || !model) return;
+
+  model.textContent =
+    `Model: In this lesson, I practiced ${currentLesson.theme.toLowerCase()}. ` +
+    `I learned useful words like ${currentLesson.vocab[0]} and ${currentLesson.vocab[1]}. ` +
+    `I can also use the expression "${currentLesson.idioms[0]}" in a conversation. ` +
+    `This topic is important because it helps me communicate better in English.`;
+}
+
+function speakEnglish(text){
+  if(!("speechSynthesis" in window)){
+    alert("Seu navegador não suporta áudio automático.");
+    return;
+  }
+
+  window.speechSynthesis.cancel();
+
+  setTimeout(() => {
+    const utterance = new SpeechSynthesisUtterance(text);
+
+    utterance.lang = "en-US";
+    utterance.rate = 0.84;
+    utterance.pitch = 1;
+    utterance.volume = 1;
+
+    const voices = window.speechSynthesis.getVoices();
+
+    const englishVoice =
+      voices.find(voice => voice.lang === "en-US") ||
+      voices.find(voice => voice.lang === "en-GB") ||
+      voices.find(voice => voice.lang && voice.lang.toLowerCase().startsWith("en"));
+
+    if(englishVoice){
+      utterance.voice = englishVoice;
+    }
+
+    utterance.onerror = function(event){
+      if(event.error === "interrupted" || event.error === "canceled"){
+        return;
+      }
+
+      console.warn("Audio error:", event.error);
+    };
+
+    window.speechSynthesis.speak(utterance);
+  }, 120);
+}
+
+function activateAudio(){
+  speakEnglish("Audio activated. Welcome to Book Three.");
+}
+
+function escapeText(text){
+  return String(text)
+    .replaceAll("\\", "\\\\")
+    .replaceAll("'", "\\'")
+    .replaceAll('"', "&quot;");
+}
+
+function escapeForSpeech(text){
+  return String(text)
+    .replaceAll("\\", "\\\\")
+    .replaceAll("'", "\\'")
+    .replaceAll('"', "");
+}
+
+document.addEventListener("keydown", event => {
+  if(player.classList.contains("active")){
+    if(event.key === "ArrowRight") nextSlide();
+    if(event.key === "ArrowLeft") prevSlide();
+  }
+});
+
+if("speechSynthesis" in window){
+  window.speechSynthesis.onvoiceschanged = function(){};
+}
+
+renderLessonGrid();
+</script>
+</body>
+</html>
